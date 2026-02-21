@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Race 1 Results - Next Orbit Speedfest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Global site styles -->
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* ============================================================
+       RACE RESULTS TABLE STYLING
+       ============================================================ */
+
+    table.race-results {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      table-layout: fixed; /* keeps column widths stable */
+    }
+
+    table.race-results th {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      padding: 12px 8px;
+      background: rgba(0,0,0,0.45);
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+    }
+
+    table.race-results td {
+      padding: 12px 8px;
+      font-size: 0.92rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    table.race-results tr:hover {
+      background: rgba(255,0,170,0.1);
+      cursor: pointer;
+    }
+
+    /* ------------------------------------------------------------
+       DRIVER COLUMN
+       Hidden visually, but MUST exist for championship JS
+       ------------------------------------------------------------ */
+    table.race-results th:nth-child(2),
+    table.race-results td:nth-child(2) {
+      display: none;
+    }
+
+    /* Column width distribution (POS / POINTS / TEAM) */
+    table.race-results th:nth-child(1),
+    table.race-results td:nth-child(1) { width: 20%; } /* POSITION */
+
+    table.race-results th:nth-child(3),
+    table.race-results td:nth-child(3) { width: 25%; } /* POINTS */
+
+    table.race-results th:nth-child(4),
+    table.race-results td:nth-child(4) { width: 55%; } /* TEAM */
+
+    /* ------------------------------------------------------------
+       DROPDOWN DRIVER DETAILS ROW
+       ------------------------------------------------------------ */
+    .driver-details {
+      display: none;
+      background: rgba(0,0,0,0.35);
+      animation: fadeIn 0.25s ease;
+    }
+
+    .driver-details td {
+      padding: 16px 0 !important;
+      border: none !important;
+      font-size: 0.86rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body class="page-transition">
+  <div class="page-overlay"></div>
+
+  <!-- ============================================================
+       HEADER / NAVIGATION
+       ============================================================ -->
+  <header class="site-header">
+    <div style="justify-self: start;">
+      <a href="../">
+        <button class="btn-ghost" type="button">← Championship</button>
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <div></div>
+
+    <nav class="nav-menu" aria-label="Primary">
+      <ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../../teams/">Teams</a></li>
+        <li><a href="../">Championship</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       PAGE CONTENT
+       ============================================================ -->
+  <main class="page-content">
+    <h1 class="page-heading">Serenade Music Shoppe Scramble Results</h1>
+
+    <p class="page-intro">
+      Official race results. Click a row to expand additional race details.
+    </p>
+
+    <div class="race-standings-panel">
+      <h2 class="page-subheading">Race Standings</h2>
+
+      <table class="race-results">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th style="display:none;">Driver</th> <!-- Required but hidden -->
+            <th>Points</th>
+            <th>Team</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- ======================================================
+               RACE RESULT ROW TEMPLATE
+               ======================================================
+
+               <td>POSITION</td>      → finishing position (1st, 2nd, etc)
+               <td>DRIVER NAME</td>   → REQUIRED for championship totals
+               <td>POINTS</td>        → points earned this race
+               <td>TEAM NAME</td>     → displayed team name
+
+               DO NOT REMOVE DRIVER COLUMN EVEN IF HIDDEN
+               ====================================================== -->
+
+<!-- ===================== POSITION 1 ===================== -->
+<tr class="driver-row" data-driver="1">
+  <td>1</td>        <!-- FINISH POSITION -->
+  <td>Driver 1</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>25</td>       <!-- POINTS AWARDED -->
+  <td>Team 1</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-1" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 1 <!-- GRID POSITION -->
+    <br>
+    <strong>Best Lap:</strong> 0:00.000   <!-- FASTEST LAP TIME -->
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 2 ===================== -->
+<tr class="driver-row" data-driver="2">
+  <td>2</td>        <!-- FINISH POSITION -->
+  <td>Driver 2</td> <!-- DRIVER NAME (hidden, REQUIRED) -->
+  <td>18</td>       <!-- POINTS AWARDED -->
+  <td>Team 2</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-2" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 2
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 3 ===================== -->
+<tr class="driver-row" data-driver="3">
+  <td>3</td>        <!-- FINISH POSITION -->
+  <td>Driver 3</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>15</td>       <!-- POINTS AWARDED for finishing 3rd -->
+  <td>Team 3</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-3" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 3
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 4 ===================== -->
+<tr class="driver-row" data-driver="4">
+  <td>4</td>        <!-- FINISH POSITION -->
+  <td>Driver 4</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>12</td>       <!-- POINTS AWARDED -->
+  <td>Team 4</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-4" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 4
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 5 ===================== -->
+<tr class="driver-row" data-driver="5">
+  <td>5</td>        <!-- FINISH POSITION -->
+  <td>Driver 5</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>10</td>       <!-- POINTS AWARDED -->
+  <td>Team 5</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-5" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 5
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 6 ===================== -->
+<tr class="driver-row" data-driver="6">
+  <td>6</td>        <!-- FINISH POSITION -->
+  <td>Driver 6</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>8</td>        <!-- POINTS AWARDED -->
+  <td>Team 6</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-6" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 6
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 7 ===================== -->
+<tr class="driver-row" data-driver="7">
+  <td>7</td>        <!-- FINISH POSITION -->
+  <td>Driver 7</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>6</td>        <!-- POINTS AWARDED -->
+  <td>Team 7</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-7" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 7
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 8 ===================== -->
+<tr class="driver-row" data-driver="8">
+  <td>8</td>        <!-- FINISH POSITION -->
+  <td>Driver 8</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>4</td>        <!-- POINTS AWARDED -->
+  <td>Team 8</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-8" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 8
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 9 ===================== -->
+<tr class="driver-row" data-driver="9">
+  <td>9</td>        <!-- FINISH POSITION -->
+  <td>Driver 9</td> <!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>2</td>        <!-- POINTS AWARDED -->
+  <td>Team 9</td>   <!-- TEAM NAME -->
+</tr>
+<tr id="driver-9" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 9
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 10 ===================== -->
+<tr class="driver-row" data-driver="10">
+  <td>10</td>       <!-- FINISH POSITION -->
+  <td>Driver 10</td><!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>1</td>        <!-- POINTS AWARDED -->
+  <td>Team 10</td>  <!-- TEAM NAME -->
+</tr>
+<tr id="driver-10" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 10
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 11 ===================== -->
+<tr class="driver-row" data-driver="11">
+  <td>11</td>       <!-- FINISH POSITION -->
+  <td>Driver 11</td><!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>0</td>        <!-- POINTS AWARDED -->
+  <td>Team 11</td>  <!-- TEAM NAME -->
+</tr>
+<tr id="driver-11" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 11
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+<!-- ===================== POSITION 12 ===================== -->
+<tr class="driver-row" data-driver="12">
+  <td>12</td>       <!-- FINISH POSITION -->
+  <td>Driver 12</td><!-- DRIVER NAME (hidden visually, REQUIRED for championship totals) -->
+  <td>0</td>        <!-- POINTS AWARDED -->
+  <td>Team 12</td>  <!-- TEAM NAME -->
+</tr>
+<tr id="driver-12" class="driver-details">
+  <td colspan="4">
+    <strong>Starting Position:</strong> 12
+    <br>
+    <strong>Best Lap:</strong> 0:00.000
+    <br>
+    <strong>Driver:</strong> xx
+  </td>
+</tr>
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Global JS (nav toggle, page transitions, etc.) -->
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>

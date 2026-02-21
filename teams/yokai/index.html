@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yokai Racing - Next Orbit Speedfest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../../css/style.css" />
+
+  <style>
+    /* TEAM INFO PANELS */
+    .team-panels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin: 30px 0 40px;
+    }
+
+    .team-panel img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 14px 14px 0 0;
+      display: block;
+    }
+
+    .team-panel .event-info-panel {
+      background: none;
+      padding: 16px 20px 0;
+    }
+  </style>
+</head>
+
+<body class="page-transition - theme-yokai">
+  <div class="page-overlay"></div>
+
+  <header class="site-header">
+    <!-- BACK TO TEAMS -->
+    <div style="justify-self: start;">
+      <a href="../">
+        <button class="btn-ghost" type="button">← Teams</button>
+      </a>
+    </div>
+
+    <!-- NAV TOGGLE -->
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <div></div>
+
+    <!-- NAV -->
+    <nav class="nav-menu" aria-label="Primary">
+      <ul>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../">Teams</a></li>
+        <li><a href="../../championship/">Championship</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1 class="page-heading">YOKAI RACING</h1>
+
+    <p class="page-intro">
+    </p>
+
+    <!-- TEAM PANELS -->
+    <section class="team-panels">
+ <!-- Invisible spacer to preserve the original 3-panel sizing -->
+  <div class="event-panel spacer"></div>
+      </div>
+
+      <div class="event-panel team-panel">
+        <img src="../../images/teams/yokai/pic1.jpg" alt="Team image 2">
+        <div class="event-info-panel">
+          <p class="page-intro" style="margin-bottom: 0;">
+            Yokai Racing was founded by me, Walter Jones, who lives for the art of speed and the love of motorsport. 
+            What began in the streets soon moved onto the tracks, where a handful of drivers obsessed with speed and the 
+            perfect lap helped turn Yokai into a successful racing organization.
+          </p>
+        </div>
+      </div>
+
+ <!-- Invisible spacer to preserve the original 3-panel sizing -->
+  <div class="event-panel spacer"></div>
+      </div>
+    </section>
+
+    <!-- LONG FORM DESCRIPTION -->
+    <div class="event-info-panel">
+      <p class="page-intro" style="margin-bottom: 0;">
+        Here at Yokai Racing, we believe every car has a soul and every driver is the heartbeat. 
+        Our mission is and always will be to make them beat in unison. We are the ghosts in the machine, 
+        the "Yokai" that haunt the apex of every turn. We bring a level of professional artistry to the track that 
+        transforms every race into a singular manifestation of speed. Through clean execution, the team works tirelessly 
+        to stay in front of the pack.
+      </p>
+    </div>
+  </main>
+
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>
