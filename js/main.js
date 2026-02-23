@@ -142,27 +142,66 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
   });
 });
 
-/* ==========================================================
-   COPY LINK BUTTON
-========================================================== */
+/* ========================================================== COPY LINK BUTTON (FiveM/CEF friendly) ========================================================== */
 const copyBtn = document.getElementById("copyLinkBtn");
 const popup = document.getElementById("copyPopup");
 
-if (copyBtn && popup) {
+async function copyToClipboard(text) {
+  // 1) Modern API (works in most browsers)
+  if (navigator.clipboard && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (_) {
+      // fall through
+    }
+  }
+
+  // 2) Fallback for CEF / older webviews
+  try {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+
+    // Prevent zoom/scroll jumps on mobile
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.top = "-1000px";
+    ta.style.left = "-1000px";
+    ta.style.opacity = "0";
+
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  } catch (_) {
+    return false;
+  }
+}
+
+function showCopiedPopup() {
+  if (!popup) return;
+  popup.style.opacity = "1";
+  setTimeout(() => (popup.style.opacity = "0"), 2000);
+}
+
+if (copyBtn) {
   copyBtn.addEventListener("click", async () => {
     const link = copyBtn.getAttribute("data-copy-link");
     if (!link) return;
 
-    try {
-      await navigator.clipboard.writeText(link);
-      popup.style.opacity = "1";
-      setTimeout(() => (popup.style.opacity = "0"), 2000);
-    } catch {
-      // If clipboard permissions fail, silently do nothing
+    const ok = await copyToClipboard(link);
+
+    if (ok) {
+      showCopiedPopup();
+    } else {
+      // 3) Last resort: manual copy prompt (works basically everywhere)
+      window.prompt("Copy this:", link);
     }
   });
 }
-
 /* ==========================================================
    GLITCH CLICK EFFECT
 ========================================================== */
