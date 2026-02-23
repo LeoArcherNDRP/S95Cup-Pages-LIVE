@@ -1109,3 +1109,33 @@ html.theme-yokai::before {
 .event-info-panel + .event-panel {
   margin-top: 30px;
 }
+
+
+/* =========================================================
+   FiveM phone fix: 2-person team layouts should be responsive
+   ========================================================= */
+
+/* If your 2-person wrapper uses this class, make it flexible */
+.event-panels.two-panels-centered{
+  display: grid;
+  /* Two columns when there is space */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Ensure panels can shrink instead of forcing overflow */
+.event-panels.two-panels-centered .event-panel{
+  width: 100%;
+  min-width: 0;
+}
+
+/* Small FiveM phone (~470px wide): stack vertically */
+@media (max-width: 520px){
+  .event-panels.two-panels-centered{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
