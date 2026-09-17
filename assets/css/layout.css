@@ -1,0 +1,958 @@
+/* =========================================================
+   NEXT ORBIT SPEEDFEST
+   Layout Styles
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Header
+--------------------------------------------------------- */
+
+.site-header {
+
+    width: min(92%, var(--content-width));
+
+    margin: 2rem auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.brand {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: var(--font-heading);
+    font-weight: 700;
+
+}
+
+
+.brand img {
+
+    width: 72px;
+    height: 72px;
+
+}
+
+
+.brand span {
+
+    font-size: 1.2rem;
+
+}
+
+
+/* ---------------------------------------------------------
+   Landing Hero
+--------------------------------------------------------- */
+
+.landing-hero {
+
+    width: min(95%, var(--container-width));
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+
+}
+
+
+.hero-logo {
+
+    width: 180px;
+
+    margin: 0 auto 2rem;
+
+}
+
+
+.hero-title {
+
+    margin-bottom: 1rem;
+
+}
+
+
+.hero-subtitle {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+
+}
+
+
+/* ---------------------------------------------------------
+   Championship Cards
+--------------------------------------------------------- */
+
+.championship-grid {
+
+    width: min(95%, var(--container-width));
+
+    margin: 5rem auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+
+}
+
+
+.championship-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-large);
+
+    min-height: 520px;
+
+    display: flex;
+    align-items: flex-end;
+
+    text-decoration: none;
+
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: var(--shadow-large);
+
+    transition: transform .35s ease;
+
+}
+
+
+.championship-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+.championship-overlay {
+
+    width: 100%;
+
+    padding: 3rem;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.85)
+        );
+
+}
+
+
+.championship-overlay h2 {
+
+    margin-bottom: .75rem;
+
+}
+
+
+.championship-overlay p {
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+.enter-link {
+
+    color: white;
+
+    font-family: var(--font-heading);
+
+    font-size: .9rem;
+
+    letter-spacing: .1em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ---------------------------------------------------------
+   Standard Page Hero
+--------------------------------------------------------- */
+
+.championship-hero {
+
+    width: min(95%, var(--container-width));
+
+    margin: 2rem auto 4rem;
+
+    min-height: 500px;
+
+    border-radius: var(--radius-large);
+
+    display: flex;
+    align-items: end;
+
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.championship-hero__content {
+
+    width: 100%;
+
+    padding: 3rem;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.85)
+        );
+
+}
+
+
+/* ---------------------------------------------------------
+   Content Sections
+--------------------------------------------------------- */
+
+.content-section {
+
+    width: min(95%, var(--container-width));
+
+    margin: 4rem auto;
+
+}
+
+
+.section-heading {
+
+    margin-bottom: 2rem;
+
+}
+
+
+.section-heading--left {
+
+    text-align: left;
+
+}
+
+
+.section-heading--center {
+
+    text-align: center;
+
+}
+
+
+/* ---------------------------------------------------------
+   Team Grid
+--------------------------------------------------------- */
+
+.team-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 1.5rem;
+}
+
+
+/* ---------------------------------------------------------
+   Footer
+--------------------------------------------------------- */
+
+.site-footer {
+
+    margin-top: 8rem;
+
+    padding: 2rem;
+
+    border-top: 1px solid var(--color-border);
+
+    text-align: center;
+
+}
+
+/* ---------------------------------------------------------
+   Landing page background
+--------------------------------------------------------- */
+
+.landing-background {
+    position: fixed;
+    z-index: -1;
+
+    inset: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+
+.landing-background__grid {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.8),
+            transparent 90%
+        );
+}
+
+
+.landing-background__glow {
+    position: absolute;
+
+    top: -300px;
+    left: 50%;
+
+    width: 900px;
+    height: 900px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(46, 140, 255, 0.18),
+            transparent 65%
+        );
+
+    transform: translateX(-50%);
+
+    filter: blur(20px);
+}
+
+
+/* ---------------------------------------------------------
+   Landing page layout
+--------------------------------------------------------- */
+
+.landing-page {
+    min-height: 100vh;
+}
+
+
+.landing-hero {
+    min-height: 88vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.hero-scroll-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 2.5rem;
+
+    color: var(--color-text);
+
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+.hero-scroll-link span {
+    color: var(--color-accent);
+}
+
+
+.championship-section {
+    padding-block: 3rem 6rem;
+}
+
+
+.section-description {
+    max-width: 680px;
+
+    margin: 1rem auto 0;
+}
+
+
+.landing-actions {
+    width: min(
+        95%,
+        var(--content-width)
+    );
+
+    margin: 2rem auto 6rem;
+
+    padding: 4rem 2rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(46, 140, 255, 0.08),
+            rgba(255, 255, 255, 0.02)
+        ),
+        var(--color-surface);
+
+    box-shadow: var(--shadow-large);
+
+    text-align: center;
+}
+
+
+.landing-actions__content {
+    max-width: 720px;
+
+    margin-inline: auto;
+}
+
+
+.landing-actions h2 {
+    margin-block: 0.75rem 1rem;
+}
+
+
+.landing-actions__buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+/* ---------------------------------------------------------
+   Page navigation
+--------------------------------------------------------- */
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+/* ---------------------------------------------------------
+   Team hero
+--------------------------------------------------------- */
+
+.team-hero {
+    position: relative;
+
+    width: min(
+        92%,
+        var(--content-width)
+    );
+
+    aspect-ratio: 1800 / 1300;
+    min-height: 0;
+
+    margin: 2rem auto 6rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background-color: var(--color-surface);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+
+    box-shadow: var(--shadow-large);
+}
+.team-hero__overlay {
+    position: absolute;
+
+    inset: -2px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8, 13, 22, 0.08) 5%,
+            rgba(8, 13, 22, 0.2) 42%,
+            rgba(4, 6, 10, 0.98) 100%
+        );
+
+    pointer-events: none;
+}
+
+.team-hero__content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
+    padding: clamp(2rem, 6vw, 5rem);
+}
+
+
+.team-hero__content h1 {
+    margin-block: 0.5rem 1rem;
+}
+
+
+.team-hero__content > p:not(.eyebrow) {
+    max-width: 650px;
+
+    font-size: 1.1rem;
+}
+
+
+.team-hero__scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    margin-top: 2rem;
+
+    color: var(--color-text);
+
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+.team-hero__scroll span {
+    color: var(--color-accent);
+}
+
+
+/* ---------------------------------------------------------
+   Team page sections
+--------------------------------------------------------- */
+
+.team-section {
+    width: min(
+        95%,
+        var(--content-width)
+    );
+
+    margin: 0 auto 7rem;
+}
+
+
+.team-section__heading {
+    max-width: 760px;
+
+    margin-bottom: 2.5rem;
+}
+
+
+.team-section__heading h2 {
+    margin-block: 0.4rem 1rem;
+}
+
+
+.team-overview {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.6fr)
+        minmax(280px, 0.7fr);
+
+    gap: 3rem;
+    align-items: start;
+}
+
+
+.team-overview__story {
+    font-size: 1.1rem;
+}
+
+
+.team-overview__story p + p {
+    margin-top: 1.25rem;
+}
+
+
+.team-details {
+    display: grid;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    overflow: hidden;
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-small);
+}
+
+
+.team-detail {
+    padding: 1.35rem 1.5rem;
+
+    border-bottom: 1px solid var(--color-border);
+}
+
+
+.team-detail:last-child {
+    border-bottom: 0;
+}
+
+
+.team-detail__label {
+    display: block;
+
+    margin-bottom: 0.25rem;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   Drivers
+--------------------------------------------------------- */
+
+.driver-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 2rem;
+}
+
+
+/* ---------------------------------------------------------
+   Car showcase
+--------------------------------------------------------- */
+
+.car-showcase {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.6fr)
+        minmax(300px, 0.75fr);
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-large);
+}
+
+
+.car-showcase__image {
+    min-height: 520px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.car-showcase__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3rem;
+}
+
+
+.car-showcase__details h3 {
+    margin-block: 0.5rem 1rem;
+}
+
+
+/* ---------------------------------------------------------
+   Team gallery
+--------------------------------------------------------- */
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.5rem;
+}
+
+
+.gallery-item {
+    min-height: 300px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-medium);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.gallery-item--large {
+    grid-row: span 2;
+
+    min-height: 625px;
+}
+
+
+/* ---------------------------------------------------------
+   Return panel
+--------------------------------------------------------- */
+
+.team-return {
+    width: min(
+        95%,
+        var(--content-width)
+    );
+
+    margin: 0 auto 6rem;
+
+    padding: 4rem 2rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(46, 140, 255, 0.08),
+            rgba(255, 255, 255, 0.02)
+        ),
+        var(--color-surface);
+
+    text-align: center;
+
+    box-shadow: var(--shadow-large);
+}
+
+
+.team-return h2 {
+    margin-block: 0.65rem 1.75rem;
+}
+
+/* ---------------------------------------------------------
+   Race results hero
+--------------------------------------------------------- */
+
+.race-hero {
+    position: relative;
+
+    width: min(
+        95%,
+        var(--container-width)
+    );
+
+    min-height: 520px;
+
+    margin: 2rem auto 5rem;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8, 13, 22, 0.12),
+            rgba(8, 13, 22, 0.98)
+        ),
+        url("../images/championships/gt4-cup.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: var(--shadow-large);
+}
+
+
+.race-hero__content {
+    width: 100%;
+
+    padding: clamp(2rem, 6vw, 5rem);
+}
+
+
+.race-hero__content h1 {
+    margin-block: 0.5rem 1rem;
+}
+
+
+.race-hero__content > p:not(.eyebrow) {
+    max-width: 680px;
+}
+
+
+.race-meta {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+
+.race-meta__item {
+    min-width: 180px;
+
+    padding: 1rem 1.25rem;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-small);
+
+    background: rgba(8, 13, 22, 0.72);
+
+    backdrop-filter: blur(10px);
+}
+
+
+.race-meta__label {
+    display: block;
+
+    margin-bottom: 0.25rem;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   Two-car machine layout
+--------------------------------------------------------- */
+
+.machine-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 2rem;
+}
+
+
+.machine-card {
+    overflow: hidden;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-large);
+
+    background: var(--color-surface);
+
+    box-shadow: var(--shadow-large);
+}
+
+
+.machine-card__image {
+    min-height: 360px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.machine-card__content {
+    padding: 2rem;
+}
+
+
+.machine-card__content h3 {
+    margin-block: 0.5rem 1rem;
+}
+
+
+
+/* ---------------------------------------------------------
+   Team introduction
+--------------------------------------------------------- */
+
+.team-intro {
+    width: min(
+        92%,
+        var(--content-width)
+    );
+
+    margin: -3rem auto 5rem;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.team-intro h1 {
+    margin: 0.5rem 0 1rem;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(
+        3rem,
+        6vw,
+        5.5rem
+    );
+
+    line-height: 0.95;
+}
+
+
+.team-intro__description {
+    margin-bottom: 1.75rem;
+
+    color: var(--color-text-muted);
+
+    font-size: 1rem;
+}

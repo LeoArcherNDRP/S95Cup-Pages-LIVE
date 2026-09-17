@@ -1,0 +1,683 @@
+/* =========================================================
+   NEXT ORBIT SPEEDFEST
+   Responsive Styles
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Large tablets and smaller laptops
+   --------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+    .championship-card {
+        min-height: 460px;
+    }
+
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .championship-overlay,
+    .championship-hero__content {
+        padding: 2.5rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Tablets
+   --------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .site-header {
+        margin-block: 1.25rem;
+
+        gap: 1rem;
+    }
+
+
+    .brand img {
+        width: 58px;
+        height: 58px;
+    }
+
+
+    .brand span {
+        font-size: 1rem;
+    }
+
+
+    .landing-hero {
+        padding-top: 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+
+    .hero-logo {
+        width: 150px;
+
+        margin-bottom: 1.5rem;
+    }
+
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+
+    .championship-grid {
+        grid-template-columns: 1fr;
+
+        margin-block: 3rem;
+
+        gap: 1.5rem;
+    }
+
+
+    .championship-card {
+        min-height: 430px;
+    }
+
+
+    .championship-hero {
+        min-height: 430px;
+
+        margin-bottom: 3rem;
+    }
+
+
+    .content-section {
+        margin-block: 3rem;
+    }
+
+
+    .site-footer {
+        margin-top: 5rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Phones and narrow FiveM screens
+   --------------------------------------------------------- */
+
+@media (max-width: 620px) {
+
+    .site-header {
+        width: min(92%, var(--container-width));
+
+        align-items: flex-start;
+    }
+
+
+    .brand {
+        gap: 0.7rem;
+    }
+
+
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .brand span {
+        max-width: 160px;
+
+        font-size: 0.85rem;
+        line-height: 1.25;
+    }
+
+
+    .button--small {
+        min-height: 38px;
+
+        padding: 0.6rem 0.8rem;
+
+        font-size: 0.65rem;
+    }
+
+
+    .landing-hero {
+        width: min(92%, var(--container-width));
+
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+
+    .hero-logo {
+        width: 130px;
+    }
+
+
+    .hero-title {
+        font-size: clamp(2rem, 12vw, 3.4rem);
+    }
+
+
+    .hero-subtitle {
+        max-width: 34rem;
+
+        font-size: 0.95rem;
+    }
+
+
+    .championship-grid {
+        width: min(92%, var(--container-width));
+
+        margin-block: 2rem;
+    }
+
+
+    .championship-card {
+        min-height: 360px;
+
+        border-radius: var(--radius-medium);
+    }
+
+
+    .championship-overlay,
+    .championship-hero__content {
+        padding: 1.5rem;
+    }
+
+
+    .championship-overlay h2 {
+        font-size: clamp(1.75rem, 9vw, 2.5rem);
+    }
+
+
+    .championship-overlay p {
+        margin-bottom: 1rem;
+
+        font-size: 0.9rem;
+    }
+
+
+    .enter-link {
+        font-size: 0.7rem;
+    }
+
+
+    .championship-hero {
+        width: min(92%, var(--container-width));
+
+        min-height: 360px;
+
+        border-radius: var(--radius-medium);
+    }
+
+
+    .championship-hero__content h1 {
+        font-size: clamp(2.1rem, 12vw, 3.8rem);
+    }
+
+
+    .championship-hero__content > p:not(.eyebrow) {
+        font-size: 0.95rem;
+    }
+
+
+    .content-section {
+        width: min(92%, var(--container-width));
+    }
+
+
+    .section-heading {
+        margin-bottom: 1.5rem;
+    }
+
+
+    .team-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+    }
+
+
+    .team-card__content {
+        padding: 1.25rem;
+    }
+
+
+    .info-panel {
+        padding: 1.5rem;
+    }
+
+
+    .scoreboard-table th,
+    .scoreboard-table td {
+        padding: 0.85rem 1rem;
+    }
+
+
+    .site-footer {
+        padding-inline: 1rem;
+
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Very small phone screens
+   --------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+    .site-header {
+        width: min(90%, var(--container-width));
+    }
+
+
+    .brand span {
+        display: inline;
+    }
+
+
+    .championship-card {
+        min-height: 320px;
+    }
+
+
+    .championship-overlay,
+    .championship-hero__content {
+        padding: 1.25rem;
+    }
+
+
+    .button {
+        width: 100%;
+    }
+
+
+    .button--small {
+        width: auto;
+    }
+
+
+    .championship-hero {
+        min-height: 330px;
+    }
+
+
+    .team-card__content h3 {
+        font-size: 1.15rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------------
+   Reduced motion accessibility
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+.landing-hero {
+    min-height: 76vh;
+}
+
+
+.championship-section {
+    padding-block: 2rem 4rem;
+}
+
+
+.landing-actions {
+    width: min(92%, var(--content-width));
+
+    margin-bottom: 4rem;
+
+    padding: 2.5rem 1.25rem;
+}
+
+
+.landing-actions__buttons {
+    flex-direction: column;
+}
+
+
+.landing-actions__buttons .button {
+    width: 100%;
+}
+
+/* ---------------------------------------------------------
+   Team pages
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .team-overview,
+    .car-showcase {
+        grid-template-columns: 1fr;
+    }
+
+
+    .car-showcase__image {
+        min-height: 430px;
+    }
+
+
+    .car-showcase__details {
+        padding: 2.5rem;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    .page-navigation {
+        gap: 0.5rem;
+    }
+
+
+    .page-navigation .button {
+        padding-inline: 0.7rem;
+    }
+
+
+.team-hero {
+    width: min(92%, var(--container-width));
+
+    aspect-ratio: 1800 / 1300;
+    min-height: 0;
+
+    margin-bottom: 4rem;
+
+    border-radius: var(--radius-medium);
+
+    background-size: cover;
+    background-position: center;
+}
+    .team-hero__content {
+        padding: 1.5rem;
+    }
+
+
+    .team-hero__content > p:not(.eyebrow) {
+        font-size: 0.95rem;
+    }
+
+
+    .team-section {
+        width: min(92%, var(--content-width));
+
+        margin-bottom: 4.5rem;
+    }
+
+
+    .driver-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .car-showcase {
+        border-radius: var(--radius-medium);
+    }
+
+
+    .car-showcase__image {
+        min-height: 300px;
+    }
+
+
+    .car-showcase__details {
+        padding: 1.5rem;
+    }
+
+
+    .team-gallery {
+        grid-template-columns: 1fr;
+    }
+
+
+    .gallery-item,
+    .gallery-item--large {
+        grid-row: auto;
+
+        min-height: 280px;
+    }
+
+
+    .team-return {
+        width: min(92%, var(--content-width));
+
+        margin-bottom: 4rem;
+
+        padding: 2.5rem 1.25rem;
+    }
+
+}
+
+
+@media (max-width: 460px) {
+
+    .page-navigation .button:nth-child(2) {
+        display: inline-flex;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   Scoreboard summary
+--------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .scoreboard-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .scoreboard-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   Championship calendar
+--------------------------------------------------------- */
+
+@media (max-width: 620px) {
+
+    .calendar-round {
+        grid-template-columns:
+            55px
+            minmax(0, 1fr);
+
+        gap: 1rem;
+
+        padding: 1.25rem;
+    }
+
+
+    .calendar-round__number {
+        font-size: 1.75rem;
+    }
+
+
+    .calendar-round__status {
+        grid-column: 2;
+
+        justify-self: start;
+
+        min-width: 0;
+
+        margin-top: 0.25rem;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   Race Centre
+--------------------------------------------------------- */
+
+@media (max-width: 720px) {
+
+    .latest-race-card__heading {
+        flex-direction: column;
+    }
+
+
+    .latest-race-card__stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    .latest-race-card__action {
+        justify-content: flex-start;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   Two-car machine layout
+--------------------------------------------------------- */
+
+@media (max-width: 850px) {
+
+    .machine-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 620px) {
+
+    .machine-card {
+        border-radius: var(--radius-medium);
+    }
+
+
+    .machine-card__image {
+        min-height: 280px;
+    }
+
+
+    .machine-card__content {
+        padding: 1.5rem;
+    }
+
+}
+
+/* ---------------------------------------------------------
+   Championship standings mobile layout
+--------------------------------------------------------- */
+
+@media (max-width: 620px) {
+
+    .scoreboard-table {
+        width: 100%;
+    }
+
+
+    .scoreboard-table th,
+    .scoreboard-table td {
+        white-space: normal;
+    }
+
+
+    /* Hide Wins */
+    .scoreboard-table th:nth-child(4),
+    .scoreboard-table td:nth-child(4) {
+        display: none;
+    }
+
+
+    /* Hide Podiums */
+    .scoreboard-table th:nth-child(5),
+    .scoreboard-table td:nth-child(5) {
+        display: none;
+    }
+
+
+    /* Hide Fastest Laps */
+    .scoreboard-table th:nth-child(6),
+    .scoreboard-table td:nth-child(6) {
+        display: none;
+    }
+
+
+    /* Position */
+    .scoreboard-table th:nth-child(1),
+    .scoreboard-table td:nth-child(1) {
+        width: 14%;
+    }
+
+
+    /* Driver */
+    .scoreboard-table th:nth-child(2),
+    .scoreboard-table td:nth-child(2) {
+        width: 32%;
+    }
+
+
+    /* Team */
+    .scoreboard-table th:nth-child(3),
+    .scoreboard-table td:nth-child(3) {
+        width: 36%;
+    }
+
+
+    /* Points */
+    .scoreboard-table th:nth-child(7),
+    .scoreboard-table td:nth-child(7) {
+        width: 18%;
+        text-align: right;
+    }
+
+
+    .scoreboard-table th,
+    .scoreboard-table td {
+        padding: 0.85rem 0.75rem;
+
+        overflow-wrap: break-word;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .race-result-details__inner {
+        grid-template-columns: 1fr;
+
+        padding: 1rem;
+    }
+
+
+    .race-result-detail--notes {
+        grid-column: auto;
+    }
+
+}

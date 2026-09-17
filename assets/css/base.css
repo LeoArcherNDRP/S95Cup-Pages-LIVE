@@ -1,0 +1,318 @@
+/* =========================================================
+   NEXT ORBIT SPEEDFEST
+   Base Styles
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. Website colour and spacing variables
+   --------------------------------------------------------- */
+
+:root {
+    /* Main colours */
+    --color-background: #080d16;
+    --color-background-soft: #0d1421;
+    --color-surface: #111a2a;
+    --color-surface-light: #18243a;
+
+    /* Brand colours */
+    --color-primary: #2e8cff;
+    --color-primary-hover: #5aa5ff;
+    --color-accent: #5ec8ff;
+
+    /* Text colours */
+    --color-text: #ffffff;
+    --color-text-muted: #a8b3c4;
+
+    /* Borders */
+    --color-border: rgba(255, 255, 255, 0.1);
+
+    /* Status colours */
+    --color-success: #39d98a;
+    --color-warning: #ffb547;
+    --color-danger: #ff5b6e;
+
+    /* Fonts */
+    --font-heading: "Orbitron", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Layout widths */
+    --container-width: 1400px;
+    --content-width: 1100px;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 5rem;
+    --spacing-3xl: 7rem;
+
+    /* Rounded corners */
+    --radius-small: 6px;
+    --radius-medium: 12px;
+    --radius-large: 20px;
+
+    /* Shadows */
+    --shadow-small: 0 8px 24px rgba(0, 0, 0, 0.2);
+    --shadow-large: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.35s ease;
+}
+
+
+/* ---------------------------------------------------------
+   2. CSS reset
+   Removes inconsistent browser spacing and sizing
+   --------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(46, 140, 255, 0.08),
+            transparent 35%
+        ),
+        var(--color-background);
+
+    color: var(--color-text);
+
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   3. Basic typography
+   --------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.15;
+
+    letter-spacing: 0.04em;
+}
+
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+
+h3 {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+
+p {
+    color: var(--color-text-muted);
+}
+
+
+strong {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   4. Links
+   --------------------------------------------------------- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    transition:
+        color var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+
+a:hover {
+    color: var(--color-accent);
+}
+
+
+/* ---------------------------------------------------------
+   5. Images
+   --------------------------------------------------------- */
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ---------------------------------------------------------
+   6. Buttons and form controls reset
+   --------------------------------------------------------- */
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------------------------------
+   7. Lists
+   --------------------------------------------------------- */
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* ---------------------------------------------------------
+   8. Shared content containers
+   --------------------------------------------------------- */
+
+.container {
+    width: min(
+        calc(100% - 2rem),
+        var(--container-width)
+    );
+
+    margin-inline: auto;
+}
+
+
+.content-container {
+    width: min(
+        calc(100% - 2rem),
+        var(--content-width)
+    );
+
+    margin-inline: auto;
+}
+
+
+/* ---------------------------------------------------------
+   9. Shared utility classes
+   --------------------------------------------------------- */
+
+.visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.text-left {
+    text-align: left;
+}
+
+
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+
+.eyebrow {
+    color: var(--color-accent);
+
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+
+/* ---------------------------------------------------------
+   10. Text selection
+   --------------------------------------------------------- */
+
+::selection {
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+
+
+/* ---------------------------------------------------------
+   11. Scrollbar styling
+   --------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-surface-light);
+
+    border: 2px solid var(--color-background);
+    border-radius: 999px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}

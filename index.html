@@ -1,101 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Next Orbit Speedfest - Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
 
-  <style>
-    .hero-cta button,
-    #copyLinkBtn {
-      padding: 12px 26px !important;
-      font-size: 0.95rem !important;
-      min-width: 180px !important;
-    }
-  </style>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Next Orbit Speedfest — professional legal racing championships."
+    >
+
+    <title>Next Orbit Speedfest</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Website styles -->
+    <link
+        rel="stylesheet"
+        href="assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css"
+    >
+
+    <!-- Website favicon -->
+<link
+    rel="icon"
+    type="image/png"
+    href="/../../../../assets/images/logos/favicon.png"
+>
 </head>
 
-<body class="page-transition">
-  <div class="page-overlay"></div>
+<body>
 
-  <header class="site-header">
-    <div></div>
+    <!-- Decorative background -->
+    <div
+        class="landing-background"
+        aria-hidden="true"
+    >
+        <div class="landing-background__grid"></div>
+        <div class="landing-background__glow"></div>
+    </div>
 
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-    <div></div>
+    <!-- Main landing page -->
+    <main class="landing-page">
 
-    <nav class="nav-menu" aria-label="Primary">
-      <ul>
-        <li><a href="./">Home</a></li>
-        <li><a href="./teams/">Teams</a></li>
-        <li><a href="./championship/">Championship</a></li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Hero -->
+        <header class="landing-hero">
 
-  <main class="page-content">
-    <section class="hero">
-      <div class="hero-logo" style="margin-bottom: 20px;">
-        <img
-          src="images/logo.png"
-          alt="Next Orbit Speedfest logo"
-          style="width: 200px; height: auto; border-radius: 12px;"
+            <img
+                class="hero-logo"
+                src="assets/images/logos/nos-logo.png"
+                alt="Next Orbit Speedfest logo"
+            >
+
+            <p class="eyebrow">
+                Professional Legal Racing
+            </p>
+
+            <h1 class="hero-title">
+                Next Orbit Speedfest
+            </h1>
+
+            <p class="hero-subtitle">
+                Choose your championship and enter the world of
+                competitive motorsport.
+            </p>
+
+            <a
+                class="hero-scroll-link"
+                href="#championships"
+            >
+                Explore Championships
+                <span aria-hidden="true">↓</span>
+            </a>
+
+        </header>
+
+
+        <!-- Championships -->
+        <section
+            class="championship-section"
+            id="championships"
+            aria-labelledby="championship-heading"
         >
-      </div>
 
-      <h1 class="hero-title">Next Orbit Speedfest S95 Cup</h1>
+            <div class="section-heading section-heading--center">
 
-      <p class="hero-subtitle">Professional, Legal Racing Championship.</p>
+                <p class="eyebrow">
+                    Select a series
+                </p>
 
-      <p class="hero-subtitle" style="opacity: 0.7; font-style: italic;">
-        Do it right. Do it legal.
-      </p>
+                <h2 id="championship-heading">
+                    Championships
+                </h2>
 
-      <div class="hero-cta">
-        <a href="./teams/">
-          <button class="btn-primary" type="button">Meet The Teams</button>
-        </a>
-        <a href="./championship/">
-          <button class="btn-ghost" type="button">Scoreboard</button>
-        </a>
-      </div>
+                <p class="section-description">
+                    Enter a championship to view its scoreboard,
+                    competing teams and individual team profiles.
+                </p>
 
-      <div style="margin-top: 20px;">
-        <button
-          class="btn-gradient"
-          id="copyLinkBtn"
-          type="button"
-          data-copy-link="https://tinyurl.com/NOSRacing"
+            </div>
+
+
+            <div class="championship-grid">
+
+                <!-- GT4 Cup -->
+                <a
+                    class="championship-card championship-card--gt4"
+                    href="championships/gt4-cup/"
+                    aria-label="Enter the GT4 Cup championship"
+                >
+
+                    <div class="championship-overlay">
+
+                        <p class="eyebrow">
+                            Next Orbit Speedfest
+                        </p>
+
+                        <h2>
+                            GT4 Cup
+                        </h2>
+
+                        <p>
+                            Enter the official Next Orbit Speedfest
+                            GT4 championship.
+                        </p>
+
+                        <span class="enter-link">
+                            Enter Championship
+                            <span aria-hidden="true">→</span>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- S95 Cup -->
+                <a
+                    class="championship-card championship-card--s95"
+                    href="championships/s95-cup/"
+                    aria-label="Enter the S95 Cup championship"
+                >
+
+                    <div class="championship-overlay">
+
+                        <p class="eyebrow">
+                            Next Orbit Speedfest
+                        </p>
+
+                        <h2>
+                            S95 Cup
+                        </h2>
+
+                        <p>
+                            Enter the official Next Orbit Speedfest
+                            S95 championship.
+                        </p>
+
+                        <span class="enter-link">
+                            Enter Championship
+                            <span aria-hidden="true">→</span>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- About and contact -->
+        <section
+            class="landing-actions"
+            aria-labelledby="landing-actions-heading"
         >
-          Join Our Email
-        </button>
-      </div>
 
-      <div
-        id="copyPopup"
-        style="
-          position: fixed;
-          bottom: 30px;
-          left: 50%;
-          transform: translateX(-50%);
-          background: rgba(0,0,0,0.8);
-          padding: 12px 20px;
-          border-radius: 999px;
-          color: white;
-          font-size: 0.9rem;
-          opacity: 0;
-          pointer-events: none;
-          transition: opacity 0.3s ease;
-          z-index: 9999;
-        "
-      >
-        Link copied to clipboard
-      </div>
-    </section>
-  </main>
+            <div class="landing-actions__content">
 
-  <script src="js/main.js" defer></script>
+                <p class="eyebrow">
+                    Next Orbit Speedfest
+                </p>
+
+                <h2 id="landing-actions-heading">
+                    Built for drivers who take racing seriously.
+                </h2>
+
+                <p>
+                    Learn more about Next Orbit Speedfest or copy our
+                    contact link to get involved.
+                </p>
+
+
+                <div class="landing-actions__buttons">
+
+                    <a
+                        class="button button--secondary"
+                        href="about/"
+                    >
+                        About NOS
+                    </a>
+
+                    <button
+                        class="button button--primary"
+                        id="contact-button"
+                        type="button"
+                    >
+                        Contact Us
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="copy-message"
+                    id="copy-message"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Next Orbit Speedfest.
+        </p>
+
+    </footer>
+
+
+    <!-- Website JavaScript -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>

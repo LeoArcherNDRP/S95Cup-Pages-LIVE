@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="About Next Orbit Speedfest."
+    >
+
+    <title>About | Next Orbit Speedfest</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Website Styles -->
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/responsive.css"
+    >
+
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="../assets/images/logos/favicon.png"
+    >
+
+
+    <!-- About Page Styles -->
+
+    <style>
+
+        /* =========================================================
+           ABOUT PAGE
+           ========================================================= */
+
+
+        /* ---------------------------------------------------------
+           Hero
+           --------------------------------------------------------- */
+
+        .about-hero {
+            position: relative;
+
+            width: min(92%, 1320px);
+
+            overflow: hidden;
+
+            margin:
+                2rem auto
+                5rem;
+
+            padding:
+                clamp(3rem, 6vw, 5rem)
+                clamp(1.5rem, 5vw, 4rem);
+
+            border: 1px solid var(--color-border);
+
+            border-radius:
+                var(--radius-large, 18px);
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(46, 140, 255, 0.18),
+                    transparent 38%
+                ),
+                linear-gradient(
+                    145deg,
+                    rgba(255, 255, 255, 0.035),
+                    rgba(255, 255, 255, 0.01)
+                ),
+                var(--color-surface);
+
+            box-shadow:
+                var(--shadow-large);
+        }
+
+
+        .about-hero::before {
+            content: "";
+
+            position: absolute;
+
+            top: -120px;
+            right: -80px;
+
+            width: 420px;
+            height: 420px;
+
+            border-radius: 50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(94, 200, 255, 0.14),
+                    transparent 68%
+                );
+
+            pointer-events: none;
+        }
+
+
+        .about-hero__content {
+            position: relative;
+
+            z-index: 1;
+
+            max-width: 850px;
+        }
+
+
+        .about-hero h1 {
+            max-width: 800px;
+
+            margin:
+                0.5rem 0
+                1.5rem;
+
+            font-size:
+                clamp(
+                    3rem,
+                    6vw,
+                    5.5rem
+                );
+
+            line-height: 0.98;
+        }
+
+
+        .about-hero__lead {
+            max-width: 760px;
+
+            margin: 0;
+
+            color:
+                var(--color-text-muted);
+
+            font-size:
+                clamp(
+                    1rem,
+                    1.5vw,
+                    1.15rem
+                );
+
+            line-height: 1.8;
+        }
+
+
+
+        /* ---------------------------------------------------------
+           Standard About Sections
+           --------------------------------------------------------- */
+
+        .about-section {
+            width: min(92%, 1200px);
+
+            margin:
+                0 auto
+                5rem;
+        }
+
+
+        .about-section__heading {
+            max-width: 850px;
+
+            margin-bottom: 2rem;
+        }
+
+
+        .about-section__heading h2 {
+            max-width: 850px;
+
+            margin:
+                0.4rem 0
+                0;
+
+            font-size:
+                clamp(
+                    2rem,
+                    4vw,
+                    3.5rem
+                );
+
+            line-height: 1.05;
+        }
+
+
+
+        /* ---------------------------------------------------------
+           Information Panels
+           --------------------------------------------------------- */
+
+        .about-panel {
+            padding:
+                clamp(
+                    1.5rem,
+                    3vw,
+                    2.25rem
+                );
+
+            border:
+                1px solid
+                var(--color-border);
+
+            border-radius:
+                var(--radius-medium, 14px);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(46, 140, 255, 0.06),
+                    rgba(255, 255, 255, 0.015)
+                ),
+                var(--color-surface);
+
+            box-shadow:
+                var(--shadow-small);
+        }
+
+
+        .about-panel p {
+            margin: 0;
+
+            color:
+                var(--color-text-muted);
+
+            line-height: 1.8;
+        }
+
+
+        .about-panel p + p {
+            margin-top: 1.5rem;
+        }
+
+
+
+        /* ---------------------------------------------------------
+           Community Feature
+           --------------------------------------------------------- */
+
+        .about-statement {
+            width: min(92%, 1200px);
+
+            margin:
+                0 auto
+                5rem;
+
+            padding:
+                clamp(
+                    3rem,
+                    6vw,
+                    5rem
+                )
+                clamp(
+                    1.5rem,
+                    5vw,
+                    4rem
+                );
+
+            border:
+                1px solid
+                rgba(94, 200, 255, 0.25);
+
+            border-radius:
+                var(--radius-large, 18px);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(46, 140, 255, 0.12),
+                    rgba(17, 26, 42, 0.96) 55%,
+                    rgba(94, 200, 255, 0.06)
+                );
+
+            text-align: center;
+
+            box-shadow:
+                var(--shadow-large);
+        }
+
+
+        .about-statement h2 {
+            max-width: 800px;
+
+            margin:
+                0.5rem auto
+                1.5rem;
+
+            font-size:
+                clamp(
+                    2rem,
+                    4vw,
+                    3.5rem
+                );
+
+            line-height: 1.1;
+        }
+
+
+        .about-statement > p:not(.eyebrow) {
+            max-width: 760px;
+
+            margin:
+                0 auto;
+
+            color:
+                var(--color-text-muted);
+
+            line-height: 1.8;
+        }
+
+
+
+        /* ---------------------------------------------------------
+           Closing Slogan Cards
+           --------------------------------------------------------- */
+
+        .about-closing {
+            width: min(92%, 1200px);
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 1.5rem;
+
+            margin:
+                0 auto
+                5rem;
+        }
+
+
+        .about-closing__card {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 190px;
+
+            padding:
+                clamp(
+                    2rem,
+                    4vw,
+                    3rem
+                );
+
+            border:
+                1px solid
+                var(--color-border);
+
+            border-radius:
+                var(--radius-large, 18px);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(46, 140, 255, 0.05),
+                    rgba(255, 255, 255, 0.01)
+                ),
+                var(--color-surface);
+
+            text-align: center;
+
+            box-shadow:
+                var(--shadow-small);
+        }
+
+
+        .about-closing__card span {
+            display: block;
+
+            color:
+                var(--color-accent);
+
+            font-family:
+                var(--font-heading);
+
+            font-size:
+                clamp(
+                    1.35rem,
+                    2.5vw,
+                    2rem
+                );
+
+            font-weight: 800;
+
+            line-height: 1.25;
+
+            letter-spacing: 0.06em;
+
+            text-transform: uppercase;
+        }
+
+
+        .about-closing__card p {
+            max-width: 500px;
+
+            margin:
+                1rem 0
+                0;
+
+            color:
+                var(--color-text-muted);
+
+            line-height: 1.7;
+        }
+
+
+
+        /* ---------------------------------------------------------
+           Responsive
+           --------------------------------------------------------- */
+
+        @media (max-width: 800px) {
+
+            .about-closing {
+                grid-template-columns: 1fr;
+            }
+
+
+            .about-hero {
+                margin-bottom: 4rem;
+            }
+
+
+            .about-section,
+            .about-statement {
+                margin-bottom: 4rem;
+            }
+
+        }
+
+
+        @media (max-width: 620px) {
+
+            .about-hero,
+            .about-section,
+            .about-statement,
+            .about-closing {
+                width: min(94%, 1200px);
+            }
+
+
+            .about-hero {
+                margin-top: 1rem;
+
+                padding:
+                    2.75rem
+                    1.5rem;
+
+                border-radius:
+                    var(--radius-medium, 14px);
+            }
+
+
+            .about-hero h1 {
+                font-size:
+                    clamp(
+                        2.6rem,
+                        13vw,
+                        4rem
+                    );
+            }
+
+
+            .about-section {
+                margin-bottom: 3.5rem;
+            }
+
+
+            .about-statement {
+                padding:
+                    3rem
+                    1.5rem;
+
+                border-radius:
+                    var(--radius-medium, 14px);
+            }
+
+
+            .about-closing {
+                margin-bottom: 3.5rem;
+            }
+
+
+            .about-closing__card {
+                min-height: 160px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         Header
+         ========================================================= -->
+
+    <header class="site-header">
+
+        <a
+            class="brand"
+            href="../"
+            aria-label="Return to the Next Orbit Speedfest homepage"
+        >
+
+            <img
+                src="../assets/images/logos/nos-logo.png"
+                alt="Next Orbit Speedfest logo"
+            >
+
+            <span>
+                Next Orbit Speedfest
+            </span>
+
+        </a>
+
+
+        <a
+            class="button button--small button--secondary"
+            href="../"
+        >
+            Back Home
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         Main Content
+         ========================================================= -->
+
+    <main class="standard-page">
+
+
+        <!-- =====================================================
+             About Hero
+             ===================================================== -->
+
+        <section class="about-hero">
+
+            <div class="about-hero__content">
+
+                <p class="eyebrow">
+                    About Us
+                </p>
+
+
+                <h1>
+                    Racing, done properly.
+                </h1>
+
+
+                <p class="about-hero__lead">
+
+                    At Next Orbit Speedfest, we believe that the excitement
+                    of motorsport should be accessible to something everyone
+                    can experience.
+
+                    Our goal is to bring the adrenaline, competition and
+                    atmosphere of professional racing to drivers and
+                    spectators across Los Santos, all within a legal,
+                    organised and controlled environment.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             What We Do
+             ===================================================== -->
+
+        <section class="about-section">
+
+            <div class="about-section__heading">
+
+                <p class="eyebrow">
+                    What We Do
+                </p>
+
+
+                <h2>
+                    Motorsport for every kind of driver
+                </h2>
+
+            </div>
+
+
+            <article class="about-panel">
+
+                <p>
+                    We host a wide variety of racing events that are
+                    designed to appeal to every kind of motorsport
+                    enthusiast.
+
+                    From one-off exhibition races and unforgettable
+                    automotive experiences, to rally events and
+                    large-scale championships, every event offers
+                    something different.
+                </p>
+
+
+                <p>
+                    Whether drivers are competing for championship
+                    glory, testing themselves in a specialist race
+                    or simply experiencing a new form of motorsport,
+                    we aim to make every moment feel just as exciting
+                    and memorable as the last.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             More Than Racing
+             ===================================================== -->
+
+        <section class="about-section">
+
+            <div class="about-section__heading">
+
+                <p class="eyebrow">
+                    More Than Racing
+                </p>
+
+
+                <h2>
+                    A platform for drivers, teams and businesses
+                </h2>
+
+            </div>
+
+
+            <article class="about-panel">
+
+                <p>
+                    Our events are about more than simply crossing
+                    the finish line first.
+
+                    Next Orbit Speedfest provides a place where
+                    talented drivers can prove themselves, teams
+                    can build their reputations and businesses can
+                    connect with the wider automotive community.
+                </p>
+
+
+                <p>
+                    We strive to create events that are professionally
+                    presented and enjoyable for everyone involved,
+                    whether you're taking part or just watching.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             Community
+             ===================================================== -->
+
+        <section class="about-statement">
+
+            <p class="eyebrow">
+                Built For The Community
+            </p>
+
+
+            <h2>
+                There is always an opportunity waiting on the track.
+            </h2>
+
+
+            <p>
+                We welcome experienced racers, rising talent and passionate
+                newcomers alike.
+
+                No matter what your background or experience is, there's
+                always an opportunity waiting for you on the track.
+
+                With new event concepts, racing disciplines and experiences
+                constantly being explored by us, Los Santos has never been
+                a better place to experience the thrill of racing in a
+                legal setting.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             NOS Philosophy
+             ===================================================== -->
+
+        <section class="about-section">
+
+            <div class="about-section__heading">
+
+                <p class="eyebrow">
+                    Next Orbit Speedfest
+                </p>
+
+
+                <h2>
+                    Where passion, competition and community meet
+                </h2>
+
+            </div>
+
+
+            <article class="about-panel">
+
+                <p>
+                    At Next Orbit Speedfest, passion, competition and
+                    community come together to create racing experiences
+                    unlike anything else in the state.
+                </p>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             Brand Statements
+             ===================================================== -->
+
+        <section class="about-closing">
+
+
+            <article class="about-closing__card">
+
+                <span>
+                    Precision. Adrenaline. Legal.
+                </span>
+
+                <p>
+                    Professional racing experiences built around
+                    competition, excitement and responsible motorsport.
+                </p>
+
+            </article>
+
+
+
+            <article class="about-closing__card">
+
+                <span>
+                    Do it right. Do it legal.
+                </span>
+
+                <p>
+                    The Next Orbit Speedfest approach to motorsport
+                    across Los Santos.
+                </p>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         Footer
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Next Orbit Speedfest.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================================================
+         JavaScript
+         ========================================================= -->
+
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

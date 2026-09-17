@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Kings Motorsports powered by Skywheels | S95 Cup | Next Orbit Speedfest
+    </title>
+
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/S95Cup-Pages-LIVE/assets/images/logos/favicon.png"
+    >
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Main website styles -->
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/responsive.css"
+    >
+
+
+    <!-- S95 team page styles -->
+
+    <style>
+
+        /* -------------------------------------------------
+           S95 Team Page
+        ------------------------------------------------- */
+
+        .s95-team-page {
+            width: min(
+                92%,
+                var(--content-width)
+            );
+
+            margin: 3rem auto 0;
+        }
+
+
+        .s95-team-heading {
+            margin-bottom: 0.75rem;
+
+            font-family: var(--font-heading);
+            font-size: clamp(2.75rem, 7vw, 5.5rem);
+
+            line-height: 0.95;
+            text-transform: uppercase;
+        }
+
+
+        .s95-team-subheading {
+            margin-bottom: 3rem;
+
+            color: var(--color-text-muted);
+
+            font-family: var(--font-heading);
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            font-weight: 700;
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+
+        /* -------------------------------------------------
+           Team panels
+        ------------------------------------------------- */
+
+        .s95-team-panels {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 2rem;
+
+            margin: 2rem 0 4rem;
+        }
+
+
+        .s95-team-panel {
+            overflow: hidden;
+
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-large);
+
+            background: var(--color-surface);
+
+            box-shadow: var(--shadow-large);
+        }
+
+
+        .s95-team-panel img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        .s95-team-panel__content {
+            padding: 1.5rem;
+        }
+
+
+        .s95-team-panel__content p {
+            margin: 0;
+
+            color: var(--color-text-muted);
+
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+
+        /* -------------------------------------------------
+           Car image
+        ------------------------------------------------- */
+
+        .s95-team-car {
+            overflow: hidden;
+
+            margin-bottom: 5rem;
+
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-large);
+
+            background: var(--color-surface);
+
+            box-shadow: var(--shadow-large);
+        }
+
+
+        .s95-team-car img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        /* -------------------------------------------------
+           Mobile
+        ------------------------------------------------- */
+
+        @media (max-width: 950px) {
+
+            .s95-team-panels {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .s95-team-page {
+                margin-top: 2rem;
+            }
+
+
+            .s95-team-panels {
+                grid-template-columns: 1fr;
+
+                gap: 1.5rem;
+
+                margin-bottom: 3rem;
+            }
+
+
+            .s95-team-panel__content {
+                padding: 1.25rem;
+            }
+
+
+            .s95-team-car {
+                margin-bottom: 4rem;
+
+                border-radius: var(--radius-medium);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         Header
+    ================================================== -->
+
+    <header class="site-header">
+
+        <a
+            class="brand"
+            href="../../../../"
+        >
+
+            <img
+                src="../../../../assets/images/logos/nos-logo.png"
+                alt="Next Orbit Speedfest logo"
+            >
+
+            <span>
+                Next Orbit Speedfest
+            </span>
+
+        </a>
+
+
+        <nav
+            class="page-navigation"
+            aria-label="Page navigation"
+        >
+
+            <a
+                class="button button--small button--secondary"
+                href="../"
+            >
+                S95 Paddock
+            </a>
+
+            <a
+                class="button button--small button--secondary"
+                href="../../"
+            >
+                S95 Cup
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =================================================
+         Team Content
+    ================================================== -->
+
+    <main class="s95-team-page">
+
+
+        <!-- Team introduction -->
+
+        <section>
+
+            <p class="eyebrow">
+                S95 Cup Team
+            </p>
+
+            <h1 class="s95-team-heading">
+                Kings Motorsports
+            </h1>
+
+            <p class="s95-team-subheading">
+                Powered by Skywheels
+            </p>
+
+        </section>
+
+
+
+        <!-- Team panels -->
+
+        <section class="s95-team-panels">
+
+
+            <!-- Damien Flippinton -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/kings/pic1.jpg"
+                    alt="Damien Flippinton"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        Damien Flippinton
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Jimmy Forrester -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/kings/pic2.jpg"
+                    alt="Jimmy Forrester"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        Jimmy Forrester
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Chris Romano -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/kings/pic3.jpg"
+                    alt="Chris Romano"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        Chris Romano
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- Team car -->
+
+        <section class="s95-team-car">
+
+            <img
+                src="../../../../assets/images/teams/s95/kings/car.jpg"
+                alt="Kings Motorsports S95 Cup race car"
+            >
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         Footer
+    ================================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Next Orbit Speedfest.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         Scripts
+    ================================================== -->
+
+    <script
+        src="../../../../assets/js/main.js"
+    ></script>
+
+
+</body>
+
+</html>

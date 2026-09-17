@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View the results from Round One of the Next Orbit Speedfest GT4 Cup."
+    >
+
+    <title>Round One | GT4 Cup | Next Orbit Speedfest</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Website styles -->
+    <link
+        rel="stylesheet"
+        href="../../../assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../assets/css/responsive.css"
+    >
+
+    <!-- Website favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="../../../../assets/images/logos/favicon.png"
+    >
+
+</head>
+
+<body data-race-id="round-1">
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a
+            class="brand"
+            href="../../../"
+            aria-label="Return to the Next Orbit Speedfest homepage"
+        >
+            <img
+                src="../../../assets/images/logos/nos-logo.png"
+                alt="Next Orbit Speedfest logo"
+            >
+
+            <span>
+                Next Orbit Speedfest
+            </span>
+        </a>
+
+
+        <nav
+            class="page-navigation"
+            aria-label="Race-results navigation"
+        >
+            <a
+                class="button button--small button--secondary"
+                href="../championship.html"
+            >
+                Championship
+            </a>
+
+            <a
+                class="button button--small button--secondary"
+                href="../"
+            >
+                GT4 Paddock
+            </a>
+        </nav>
+
+    </header>
+
+
+    <main class="standard-page">
+
+        <!-- Race hero -->
+        <section class="race-hero">
+
+            <div class="race-hero__content">
+
+                <p class="eyebrow">
+                    GT4 Cup
+                </p>
+
+                <h1 id="race-title">
+                    Loading Race
+                </h1>
+
+                <p id="race-description">
+                    Loading the official race results.
+                </p>
+
+
+                <div class="race-meta">
+
+                    <div class="race-meta__item">
+
+                        <span class="race-meta__label">
+                            Track
+                        </span>
+
+                        <strong id="race-track">
+                            Loading
+                        </strong>
+
+                    </div>
+
+
+                    <div class="race-meta__item">
+
+                        <span class="race-meta__label">
+                            Date
+                        </span>
+
+                        <strong id="race-date">
+                            Loading
+                        </strong>
+
+                    </div>
+
+
+                    <div class="race-meta__item">
+
+                        <span class="race-meta__label">
+                            Status
+                        </span>
+
+                        <strong id="race-status">
+                            Loading
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Race summary -->
+        <section
+            class="content-section"
+            aria-labelledby="race-summary-heading"
+        >
+
+            <div class="section-heading section-heading--left">
+
+                <p class="eyebrow">
+                    Race overview
+                </p>
+
+                <h2 id="race-summary-heading">
+                    At a Glance
+                </h2>
+
+            </div>
+
+
+            <div class="scoreboard-summary">
+
+                <article class="scoreboard-stat">
+
+                    <span
+                        class="scoreboard-stat__value"
+                        id="race-starters"
+                    >
+                        0
+                    </span>
+
+                    <span class="scoreboard-stat__label">
+                        Starters
+                    </span>
+
+                </article>
+
+
+                <article class="scoreboard-stat">
+
+                    <span
+                        class="scoreboard-stat__value"
+                        id="race-finishers"
+                    >
+                        0
+                    </span>
+
+                    <span class="scoreboard-stat__label">
+                        Finishers
+                    </span>
+
+                </article>
+
+
+                <article class="scoreboard-stat">
+
+                    <span
+                        class="scoreboard-stat__value"
+                        id="race-winner"
+                    >
+                        TBC
+                    </span>
+
+                    <span class="scoreboard-stat__label">
+                        Winner
+                    </span>
+
+                </article>
+
+
+                <article class="scoreboard-stat">
+
+                    <span
+                        class="scoreboard-stat__value"
+                        id="fastest-lap-driver"
+                    >
+                        TBC
+                    </span>
+
+                    <span class="scoreboard-stat__label">
+                        Fastest Lap
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Race results -->
+        <section
+            class="content-section"
+            aria-labelledby="race-results-heading"
+        >
+
+            <div class="section-heading section-heading--left">
+
+                <p class="eyebrow">
+                    Classified results
+                </p>
+
+                <h2 id="race-results-heading">
+                    Race Classification
+                </h2>
+
+                <p>
+                    Finishing positions and championship points
+                    are calculated automatically.
+                </p>
+
+            </div>
+
+            <div class="race-status-legend">
+
+                <span class="race-status-legend__item race-status-legend__item--finished">
+                    Finished
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dns">
+                    Did not Start
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dnf">
+                    Did not finish
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dsq">
+                    Disqualified
+                </span>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table class="scoreboard-table race-results-table">
+
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Position
+                    </th>
+
+                    <th scope="col">
+                        Driver
+                    </th>
+
+                    <th scope="col">
+                        Points
+                    </th>
+                </tr>
+            </thead>                
+            
+                    <tbody id="race-results-body">
+
+                        <tr>
+                            <td colspan="6">
+                                Loading race results...
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Return panel -->
+        <section class="team-return">
+
+            <p class="eyebrow">
+                Continue following the season
+            </p>
+
+            <h2>
+                Return to the GT4 Championship
+            </h2>
+
+            <a
+                class="button button--primary"
+                href="../championship.html"
+            >
+                View Championship
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Next Orbit Speedfest.
+        </p>
+
+    </footer>
+
+
+    <!-- Shared website JavaScript -->
+    <script src="../../../assets/js/main.js"></script>
+
+    <!-- GT4 race-results data -->
+    <script src="../../../assets/data/gt4-results.js"></script>
+
+    <!-- Race-results system -->
+    <script src="../../../assets/js/race-results.js"></script>
+
+</body>
+</html>

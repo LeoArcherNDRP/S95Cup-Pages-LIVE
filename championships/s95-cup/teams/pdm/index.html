@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        PDM Racing | S95 Cup | Next Orbit Speedfest
+    </title>
+
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/S95Cup-Pages-LIVE/assets/images/logos/favicon.png"
+    >
+
+
+    <!-- Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Main website styles -->
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/base.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../../../../assets/css/responsive.css"
+    >
+
+
+    <!-- S95 team page styles -->
+
+    <style>
+
+        /* -------------------------------------------------
+           S95 Team Page
+        ------------------------------------------------- */
+
+        .s95-team-page {
+            width: min(
+                92%,
+                var(--content-width)
+            );
+
+            margin: 3rem auto 0;
+        }
+
+
+        .s95-team-heading {
+            margin-bottom: 0.75rem;
+
+            font-family: var(--font-heading);
+            font-size: clamp(2.75rem, 7vw, 5.5rem);
+
+            line-height: 0.95;
+            text-transform: uppercase;
+        }
+
+
+        .s95-team-intro {
+            max-width: 900px;
+
+            margin-bottom: 3rem;
+
+            color: var(--color-text-muted);
+
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+
+        /* -------------------------------------------------
+           Team panels
+        ------------------------------------------------- */
+
+        .s95-team-panels {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 2rem;
+
+            margin: 2rem 0 4rem;
+        }
+
+
+        .s95-team-panels--two {
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+        }
+
+
+        .s95-team-panel {
+            overflow: hidden;
+
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-large);
+
+            background: var(--color-surface);
+
+            box-shadow: var(--shadow-large);
+        }
+
+
+        .s95-team-panel img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        .s95-team-panel__content {
+            padding: 1.5rem;
+        }
+
+
+        .s95-team-panel__content p {
+            margin: 0;
+
+            color: var(--color-text-muted);
+
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+
+        .s95-team-panel__content strong {
+            color: var(--color-text);
+        }
+
+
+        /* -------------------------------------------------
+           Long description
+        ------------------------------------------------- */
+
+        .s95-team-description {
+            margin-bottom: 4rem;
+
+            padding: 2rem;
+
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-large);
+
+            background: var(--color-surface);
+
+            box-shadow: var(--shadow-small);
+        }
+
+
+        .s95-team-description p {
+            margin: 0;
+
+            color: var(--color-text-muted);
+
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+
+        /* -------------------------------------------------
+           Secondary section heading
+        ------------------------------------------------- */
+
+        .s95-section-heading {
+            margin: 0 0 1.5rem;
+        }
+
+
+        .s95-section-heading h2 {
+            margin: 0.35rem 0 0;
+
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 3rem);
+        }
+
+
+        .s95-section-heading p {
+            margin: 0;
+
+            color: var(--color-text-muted);
+        }
+
+
+        /* -------------------------------------------------
+           Car image
+        ------------------------------------------------- */
+
+        .s95-team-car {
+            overflow: hidden;
+
+            margin-bottom: 4rem;
+
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-large);
+
+            background: var(--color-surface);
+
+            box-shadow: var(--shadow-large);
+        }
+
+
+        .s95-team-car img {
+            display: block;
+
+            width: 100%;
+            height: auto;
+        }
+
+
+        /* -------------------------------------------------
+           Responsive
+        ------------------------------------------------- */
+
+        @media (max-width: 950px) {
+
+            .s95-team-panels {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .s95-team-page {
+                margin-top: 2rem;
+            }
+
+
+            .s95-team-panels,
+            .s95-team-panels--two {
+                grid-template-columns: 1fr;
+
+                gap: 1.5rem;
+
+                margin-bottom: 3rem;
+            }
+
+
+            .s95-team-panel__content {
+                padding: 1.25rem;
+            }
+
+
+            .s95-team-description {
+                padding: 1.5rem;
+
+                border-radius: var(--radius-medium);
+            }
+
+
+            .s95-team-car {
+                margin-bottom: 3rem;
+
+                border-radius: var(--radius-medium);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         Header
+    ================================================== -->
+
+    <header class="site-header">
+
+        <a
+            class="brand"
+            href="../../../../"
+        >
+
+            <img
+                src="../../../../assets/images/logos/nos-logo.png"
+                alt="Next Orbit Speedfest logo"
+            >
+
+            <span>
+                Next Orbit Speedfest
+            </span>
+
+        </a>
+
+
+        <nav
+            class="page-navigation"
+            aria-label="Page navigation"
+        >
+
+            <a
+                class="button button--small button--secondary"
+                href="../"
+            >
+                S95 Paddock
+            </a>
+
+            <a
+                class="button button--small button--secondary"
+                href="../../"
+            >
+                S95 Cup
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =================================================
+         Team Content
+    ================================================== -->
+
+    <main class="s95-team-page">
+
+
+        <!-- Team introduction -->
+
+        <section>
+
+            <p class="eyebrow">
+                S95 Cup Team
+            </p>
+
+            <h1 class="s95-team-heading">
+                PDM Racing
+            </h1>
+
+            <p class="s95-team-intro">
+                PDM Racing - Drive For The Smile!
+            </p>
+
+        </section>
+
+
+
+        <!-- Main team panels -->
+
+        <section class="s95-team-panels">
+
+
+            <!-- Penny -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/pdm/pic1.jpg"
+                    alt="Penny, PDM Racing driver"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        Hi I'm Penny, I'm from the UK and driving for PDM Racing.
+                        I love racing, driving fast cars and like just having fun
+                        doing anything around the city. I'm really excited for
+                        this years S95 championship and feel privileged to be
+                        apart of it.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Dorian Riley -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/pdm/pic2.jpg"
+                    alt="Dorian Riley, PDM Racing driver"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        <strong>Dorian Riley</strong>
+                        <br><br>
+
+                        I grew up in the garage, hands dirty, engines apart,
+                        learning every bolt and build from the ground up.
+
+                        Cars aren't just a hobby to me, they're in my blood.
+                        I live for the stance culture, the precision of a
+                        perfect setup, and the raw energy of the drift scene.
+
+                        From late night builds to tire smoke on the track,
+                        I'm here for one thing - The thrill of the race.
+                        <br><br>
+
+                        Built, not bought. Driven by passion.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Team member three -->
+
+            <article class="s95-team-panel">
+
+                <img
+                    src="../../../../assets/images/teams/s95/pdm/pic3.jpg"
+                    alt="PDM Racing team member"
+                >
+
+                <div class="s95-team-panel__content">
+
+                    <p>
+                        One Down, Five Up, I just Love my wheel up
+                        <br><br>
+
+                        In a Roadster or Sedan, Im sooo Naughty with the clutch
+                        <br><br>
+
+                        Can you handle these curves, oh should I back it up
+                        <br><br>
+
+                        PEE DEE EMM, S Ninety Five, lets race for the cup!
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- Long form description -->
+
+        <section class="s95-team-description">
+
+            <p>
+                PDM Racing is the natural extension of Premium Deluxe Motorsport!
+                <br><br>
+
+                We are here to perform and have fun, but also to showcase what
+                the Karin S95 is capable of!
+                <br><br>
+
+                The Karin S95 is powered by a Flat-4/Boxer engine that's coupled
+                to a 6-speed transmission, which is tuned to give you all the
+                excitement, all the time! It's as good on the streets, as it is
+                on the track!
+                <br><br>
+
+                We at PDM are avid car enthusiasts, and in addition to selling
+                high quality motor vehicles, we like to drive them. Hard!
+                <br><br>
+
+                This way we build on our extensive pool of knowledge, and can
+                give our customers the best advice possible, and be certain
+                that they walk out of our store with a massive grin on their faces!
+            </p>
+
+        </section>
+
+
+
+        <!-- Team car -->
+
+        <section class="s95-team-car">
+
+            <img
+                src="../../../../assets/images/teams/s95/pdm/car.jpg"
+                alt="PDM Racing S95 Cup race car"
+            >
+
+        </section>
+
+
+
+        <!-- Backup driver and team principal -->
+
+        <section>
+
+            <div class="s95-section-heading">
+
+                <p class="eyebrow">
+                    Team Support
+                </p>
+
+                <h2>
+                    Backup Driver & Team Principal
+                </h2>
+
+                <p>
+                    Below we have our backup driver and team lead.
+                </p>
+
+            </div>
+
+
+            <div class="s95-team-panels s95-team-panels--two">
+
+
+                <!-- Robbie Valentino -->
+
+                <article class="s95-team-panel">
+
+                    <img
+                        src="../../../../assets/images/teams/s95/pdm/pic4.jpg"
+                        alt="Robbie Valentino"
+                    >
+
+                    <div class="s95-team-panel__content">
+
+                        <p>
+                            Hi, I'm Robbie Valentino from a small island called
+                            Malta, connoisseur of cheese and birria tacos,
+                            sworn enemy of ketchup, and a full-time menace
+                            behind the wheel of anything expensive.
+
+                            I've got a hot girlfriend, great friends, and
+                            absolutely zero intention of slowing down… ever.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- James Barber -->
+
+                <article class="s95-team-panel">
+
+                    <img
+                        src="../../../../assets/images/teams/s95/pdm/pic5.jpg"
+                        alt="James Barber, PDM Racing Team Principal"
+                    >
+
+                    <div class="s95-team-panel__content">
+
+                        <p>
+                            <strong>James Barber</strong>
+                            <br>
+                            Team Principal
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         Footer
+    ================================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Next Orbit Speedfest.
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         Scripts
+    ================================================== -->
+
+    <script
+        src="../../../../assets/js/main.js"
+    ></script>
+
+
+</body>
+
+</html>
