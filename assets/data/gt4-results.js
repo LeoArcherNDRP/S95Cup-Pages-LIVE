@@ -264,9 +264,20 @@ const gt4RaceResults = [
                 startingPosition: 13,
                 bestLap: "02:06:596",
             },
-     
+
             {
                 position: 16,
+                driver: "Rae Davis",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 16,
+                bestLap: "02:09:161",
+            },
+            
+            {
+                position: 17,
                 driver: "Ricardo Luis",
                 team: "The Asylum",
                 status: "Finished",
@@ -276,17 +287,6 @@ const gt4RaceResults = [
                 bestLap: "02:09:285",
             },
         
-            {
-                position: 17,
-                driver: "Rae Davis",
-                team: "Wildcards",
-                status: "Finished",
-                fastestLap: false,
-
-                startingPosition: 16,
-                bestLap: "02:09:161",
-            },
-
             {
                 position: 18,
                 driver: "Maeve Holliday",
