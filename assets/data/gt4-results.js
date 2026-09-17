@@ -213,7 +213,7 @@ const gt4RaceResults = [
             {
                 position: 11,
                 driver: "Jack Wixx",
-                team: "Wicked Motors",
+                team: "Grayson Motorsports x Meadow House",
                 status: "Finished",
                 fastestLap: false,
 
