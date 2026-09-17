@@ -289,7 +289,7 @@ const gt4RaceResults = [
             {
                 position: 18,
                 driver: "Maeve Holliday",
-                team: "Wicked Motors",
+                team: "Boba Babes",
                 status: "Finished",
                 fastestLap: false,
 
