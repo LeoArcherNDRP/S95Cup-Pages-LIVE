@@ -142,9 +142,20 @@ const gt4RaceResults = [
                 startingPosition: 4,
                 bestLap: "02:04:071",
             },
-            
+
             {
                 position: 5,
+                driver: "Esther Hendrix",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 9,
+                bestLap: "02:04:603",
+            },
+            
+            {
+                position: 6,
                 driver: "Jason Tanners",
                 team: "Wicked Motors",
                 status: "Finished",
@@ -154,16 +165,6 @@ const gt4RaceResults = [
                 bestLap: "02:04:464",
             },
             
-            {
-                position: 6,
-                driver: "Esther Hendrix",
-                team: "ASCEND",
-                status: "Finished",
-                fastestLap: false,
-
-                startingPosition: 9,
-                bestLap: "02:04:603",
-            },
             
             {
                 position: 7,
@@ -175,27 +176,27 @@ const gt4RaceResults = [
                 startingPosition: 8,
                 bestLap: "02:04:732",
             },
-            
+
             {
                 position: 8,
-                driver: "Daniel Rogers",
-                team: "PDMosleys Racing",
+                driver: "Vermillion Pietra",
+                team: "Senora Sap",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 20,
-                bestLap: "02:05:515",
+                startingPosition: 6,
+                bestLap: "02:06:619",
             },
-            
+
             {
                 position: 9,
-                driver: "Wylie Whitlow",
-                team: "Team NOS",
+                driver: "Samuel Copeland",
+                team: "OC Motorsports",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 11,
-                bestLap: "02:05:547",
+                startingPosition: 10,
+                bestLap: "02:07:023",
             },
             
             {
@@ -208,20 +209,9 @@ const gt4RaceResults = [
                 startingPosition: 15,
                 bestLap: "02:06:076",
             },
-                        
-            {
-                position: 11,
-                driver: "Damien Lopez",
-                team: "OC Motorsports",
-                status: "Finished",
-                fastestLap: false,
-
-                startingPosition: 13,
-                bestLap: "02:06:596",
-            },
             
             {
-                position: 12,
+                position: 11,
                 driver: "Jack Wixx",
                 team: "Wicked Motors",
                 status: "Finished",
@@ -230,20 +220,20 @@ const gt4RaceResults = [
                 startingPosition: 12,
                 bestLap: "02:06:618",
             },
-            
+
             {
-                position: 13,
-                driver: "Vermillion Pietra",
-                team: "Senora Sap",
+                position: 12,
+                driver: "Daniel Rogers",
+                team: "PDMosleys Racing",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 6,
-                bestLap: "02:06:619",
+                startingPosition: 20,
+                bestLap: "02:05:515",
             },
             
             {
-                position: 14,
+                position: 13,
                 driver: "Mikey Jones",
                 team: "PDMosleys Racing",
                 status: "Finished",
@@ -252,29 +242,40 @@ const gt4RaceResults = [
                 startingPosition: 7,
                 bestLap: "02:06:848",
             },
-            
+
+            {
+                position: 14,
+                driver: "Wylie Whitlow",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 11,
+                bestLap: "02:05:547",
+            },
+                                    
             {
                 position: 15,
-                driver: "Samuel Copeland",
+                driver: "Damien Lopez",
                 team: "OC Motorsports",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 10,
-                bestLap: "02:07:023",
+                startingPosition: 13,
+                bestLap: "02:06:596",
             },
-            
+     
             {
                 position: 16,
-                driver: "Shaun Barnes",
-                team: "BBC",
+                driver: "Ricardo Luis",
+                team: "The Asylum",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 22,
-                bestLap: "02:07:477",
+                startingPosition: 18,
+                bestLap: "02:09:285",
             },
-            
+        
             {
                 position: 17,
                 driver: "Rae Davis",
@@ -285,7 +286,7 @@ const gt4RaceResults = [
                 startingPosition: 16,
                 bestLap: "02:09:161",
             },
-                        
+
             {
                 position: 18,
                 driver: "Maeve Holliday",
@@ -296,18 +297,18 @@ const gt4RaceResults = [
                 startingPosition: 17,
                 bestLap: "02:09:217",
             },
-            
+
             {
                 position: 19,
-                driver: "Ricardo Luis",
-                team: "The Asylum",
+                driver: "Shaun Barnes",
+                team: "BBC",
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 18,
-                bestLap: "02:09:285",
+                startingPosition: 22,
+                bestLap: "02:07:477",
             },
-
+                                     
             {
                 position: 20,
                 driver: "Penny Martin",
