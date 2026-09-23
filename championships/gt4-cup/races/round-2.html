@@ -49,6 +49,15 @@
         rel="stylesheet"
         href="../../../assets/css/responsive.css"
     >
+
+    <!-- Website favicon -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/logos/favicon.png""
+    >
+
 </head>
 
 <body data-race-id="round-2">
@@ -273,39 +282,46 @@
 
             </div>
 
+            <div class="race-status-legend">
+
+                <span class="race-status-legend__item race-status-legend__item--finished">
+                    Finished
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dns">
+                    Did not Start
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dnf">
+                    Did not finish
+                </span>
+
+                <span class="race-status-legend__item race-status-legend__item--dsq">
+                    Disqualified
+                </span>
+
+            </div>
 
             <div class="table-wrapper">
 
                 <table class="scoreboard-table race-results-table">
 
-                    <thead>
-                        <tr>
-                            <th scope="col">
-                                Position
-                            </th>
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Position
+                    </th>
 
-                            <th scope="col">
-                                Driver
-                            </th>
+                    <th scope="col">
+                        Driver
+                    </th>
 
-                            <th scope="col">
-                                Team
-                            </th>
-
-                            <th scope="col">
-                                Status
-                            </th>
-
-                            <th scope="col">
-                                Fastest Lap
-                            </th>
-
-                            <th scope="col">
-                                Points
-                            </th>
-                        </tr>
-                    </thead>
-
+                    <th scope="col">
+                        Points
+                    </th>
+                </tr>
+            </thead>                
+            
                     <tbody id="race-results-body">
 
                         <tr>
@@ -317,31 +333,6 @@
                     </tbody>
 
                 </table>
-
-            </div>
-
-        </section>
-
-
-        <!-- Race notes -->
-        <section
-            class="content-section"
-            aria-labelledby="race-notes-heading"
-        >
-
-            <div class="info-panel">
-
-                <p class="eyebrow">
-                    Race control
-                </p>
-
-                <h2 id="race-notes-heading">
-                    Race Notes
-                </h2>
-
-                <p id="race-notes">
-                    Loading race notes...
-                </p>
 
             </div>
 

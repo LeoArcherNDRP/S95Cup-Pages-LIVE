@@ -289,7 +289,7 @@ const gt4RaceResults = [
         
             {
                 position: 18,
-                driver: "Maeve Holliday",
+                driver: "Maeve Holiday",
                 team: "Boba Babes",
                 status: "Finished",
                 fastestLap: false,
@@ -379,20 +379,276 @@ const gt4RaceResults = [
 
         title: "Round Two",
 
-        track: "Cook's Auto Flat Out GP",
+        track: "Cooks Auto Flat Out GP",
 
-        date: "20 September 2026",
+        date: "13 September 2026",
 
-        status: "Upcoming",
+        status: "Complete",
 
-        published: false,
+        published: true,
 
         page: "races/round-2.html",
 
         description:
-            "Round Two of the Next Orbit Speedfest GT4 Cup.",
+            "Official results from Round Two of the Next Orbit Speedfest GT4 Cup.",
 
-        results: []
+        results: [
+
+            {
+                position: 1,
+                driver: "Ray Larson",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: true,
+
+                startingPosition: 1,
+                bestLap: "01:14:672",
+            },
+
+            {
+                position: 2,
+                driver: "Levi Grayson",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 2,
+                bestLap: "01:14:703",
+            },
+            
+            {
+                position: 3,
+                driver: "James Barber",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 3,
+                bestLap: "01:15:243",
+            },
+            
+            {
+                position: 4,
+                driver: "Jason Tanners",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 4,
+                bestLap: "01:15:550",
+            },
+
+            {
+                position: 5,
+                driver: "Wylie Whitlow",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 9,
+                bestLap: "01:15:376",
+            },
+            
+            {
+                position: 6,
+                driver: "Jacqueline Bellerose",
+                team: "Pixiedust Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 5,
+                bestLap: "01:15:245",
+            },
+            
+            
+            {
+                position: 7,
+                driver: "Esther Hendrix",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 8,
+                bestLap: "01:15:637",
+            },
+
+            {
+                position: 8,
+                driver: "Geoffrey Davenport",
+                team: "Pit Stop",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 6,
+                bestLap: "01:15:545",
+            },
+
+            {
+                position: 9,
+                driver: "Jessica Valentino",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 10,
+                bestLap: "01:16:056",
+            },
+            
+            {
+                position: 10,
+                driver: "Jack Wixx",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 15,
+                bestLap: "01:16:437",
+            },
+            
+            {
+                position: 11,
+                driver: "Davy Longmire",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 12,
+                bestLap: "01:16:228",
+            },
+
+            {
+                position: 12,
+                driver: "Mikey Jones",
+                team: "PDMosleys Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 20,
+                bestLap: "01:16:364",
+            },
+            
+            {
+                position: 13,
+                driver: "Samuel Copeland",
+                team: "OC Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 7,
+                bestLap: "01:16:992",
+            },
+
+            {
+                position: 14,
+                driver: "Chris Romano",
+                team: "Striking Photography",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 11,
+                bestLap: "01:16:273",
+            },
+                                    
+            {
+                position: 15,
+                driver: "Elliot Greene",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 13,
+                bestLap: "01:16:081",
+            },
+
+            {
+                position: 16,
+                driver: "Daniel Rogers",
+                team: "PDMosleys Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 16,
+                bestLap: "01:16:393",
+            },
+            
+            {
+                position: 17,
+                driver: "Maeve Holiday",
+                team: "Boba Babes",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 18,
+                bestLap: "01:16:522",
+            },
+        
+            {
+                position: 18,
+                driver: "Ricardo Luis",
+                team: "The Asylum",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 17,
+                bestLap: "01:17:958",
+            },
+
+            {
+                position: 19,
+                driver: "Shaun Barnes",
+                team: "BBC",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 22,
+                bestLap: "01:17:120",
+            },
+                                     
+            {
+                position: 20,
+                driver: "Lorenzo Jackson",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 24,
+                bestLap: "01:17:157",
+            },
+            
+            {
+                position: 21,
+                driver: "April Storm",
+                team: "Striking Photography",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 23,
+                bestLap: "01:19:773",
+            },
+            
+            {
+                position: 22,
+                driver: "Rae Davis",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 19,
+                bestLap: "01:18:966",
+            },
+            
+            {
+                position: 23,
+                driver: "Billie Doherty",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 21,
+                bestLap: "01:19:602",
+            },
+            
+        ]
     },
 
 
