@@ -652,10 +652,21 @@ const gt4RaceResults = [
                 position: 24,
                 driver: "Damien Lopez",
                 team: "OC Motorsports",
-                status: "DNF",
+                status: "DNS",
                 fastestLap: false,
 
                 startingPosition: 18,
+                bestLap: "00:00:000",
+            },
+
+            {
+                position: 25,
+                driver: "Vermillion Pietra",
+                team: "Senora Sap",
+                status: "DSQ",
+                fastestLap: false,
+
+                startingPosition: 25,
                 bestLap: "00:00:000",
             },
 
