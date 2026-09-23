@@ -401,7 +401,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: true,
 
-                startingPosition: 1,
+                startingPosition: 2,
                 bestLap: "01:14:672",
             },
 
@@ -412,7 +412,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 2,
+                startingPosition: 1,
                 bestLap: "01:14:703",
             },
             
@@ -423,7 +423,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 3,
+                startingPosition: 5,
                 bestLap: "01:15:243",
             },
             
@@ -434,7 +434,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 4,
+                startingPosition: 3,
                 bestLap: "01:15:550",
             },
 
@@ -445,7 +445,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 9,
+                startingPosition: 4,
                 bestLap: "01:15:376",
             },
             
@@ -456,7 +456,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 5,
+                startingPosition: 15,
                 bestLap: "01:15:245",
             },
             
@@ -468,7 +468,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 8,
+                startingPosition: 7,
                 bestLap: "01:15:637",
             },
 
@@ -490,7 +490,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 10,
+                startingPosition: 13,
                 bestLap: "01:16:056",
             },
             
@@ -501,7 +501,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 15,
+                startingPosition: 16,
                 bestLap: "01:16:437",
             },
             
@@ -512,7 +512,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 12,
+                startingPosition: 9,
                 bestLap: "01:16:228",
             },
 
@@ -523,7 +523,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 20,
+                startingPosition: 8,
                 bestLap: "01:16:364",
             },
             
@@ -534,7 +534,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 7,
+                startingPosition: 11,
                 bestLap: "01:16:992",
             },
 
@@ -545,7 +545,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 11,
+                startingPosition: 14,
                 bestLap: "01:16:273",
             },
                                     
@@ -556,7 +556,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 13,
+                startingPosition: 20,
                 bestLap: "01:16:081",
             },
 
@@ -567,7 +567,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 16,
+                startingPosition: 10,
                 bestLap: "01:16:393",
             },
             
@@ -578,7 +578,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 18,
+                startingPosition: 19,
                 bestLap: "01:16:522",
             },
         
@@ -600,7 +600,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 22,
+                startingPosition: 12,
                 bestLap: "01:17:120",
             },
                                      
@@ -611,7 +611,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 24,
+                startingPosition: 21,
                 bestLap: "01:17:157",
             },
             
@@ -633,7 +633,7 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 19,
+                startingPosition: 22,
                 bestLap: "01:18:966",
             },
             
@@ -644,10 +644,21 @@ const gt4RaceResults = [
                 status: "Finished",
                 fastestLap: false,
 
-                startingPosition: 21,
+                startingPosition: 24,
                 bestLap: "01:19:602",
             },
             
+            {
+                position: 24,
+                driver: "Damien Lopez",
+                team: "OC Motorsports",
+                status: "DNF",
+                fastestLap: false,
+
+                startingPosition: 18,
+                bestLap: "00:00:000",
+            },
+
         ]
     },
 
