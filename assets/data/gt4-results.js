@@ -6,7 +6,7 @@
 
 /* ---------------------------------------------------------
    Championship points system
---------------------------------------------------------- */
+   --------------------------------------------------------- */
 
 const gt4PointsSystem = [
     25, // 1st
@@ -34,7 +34,7 @@ const gt4PointsSystem = [
 
 /* ---------------------------------------------------------
    Fastest-lap bonus
---------------------------------------------------------- */
+   --------------------------------------------------------- */
 
 const gt4FastestLapBonus = 1;
 
@@ -63,6 +63,12 @@ const gt4FastestLapBonus = 1;
    fastestLap: false  - Driver did not receive fastest lap
 
 
+   Starting position bonus:
+
+   startingPositionBonus: [1]
+       - Starting P1 receives +1 championship point
+
+
    Publishing:
 
    A completed race can link to its classification page by
@@ -70,12 +76,14 @@ const gt4FastestLapBonus = 1;
 
    Leave published as false until you are ready for visitors
    to access that race page.
---------------------------------------------------------- */
+   --------------------------------------------------------- */
 
 const gt4RaceResults = [
+
+
     /* =====================================================
        ROUND ONE
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-1",
@@ -96,6 +104,8 @@ const gt4RaceResults = [
 
         description:
             "Official results from Round One of the Next Orbit Speedfest GT4 Cup.",
+
+        startingPositionBonus: [1, 2],
 
         results: [
 
@@ -120,7 +130,7 @@ const gt4RaceResults = [
                 startingPosition: 2,
                 bestLap: "02:02:806",
             },
-            
+
             {
                 position: 3,
                 driver: "Levi Grayson",
@@ -131,7 +141,7 @@ const gt4RaceResults = [
                 startingPosition: 3,
                 bestLap: "02:03:234",
             },
-            
+
             {
                 position: 4,
                 driver: "James Barber",
@@ -153,7 +163,7 @@ const gt4RaceResults = [
                 startingPosition: 9,
                 bestLap: "02:04:603",
             },
-            
+
             {
                 position: 6,
                 driver: "Jason Tanners",
@@ -164,8 +174,7 @@ const gt4RaceResults = [
                 startingPosition: 5,
                 bestLap: "02:04:464",
             },
-            
-            
+
             {
                 position: 7,
                 driver: "Geoffrey Davenport",
@@ -198,7 +207,7 @@ const gt4RaceResults = [
                 startingPosition: 10,
                 bestLap: "02:07:023",
             },
-            
+
             {
                 position: 10,
                 driver: "Chris Romano",
@@ -209,7 +218,7 @@ const gt4RaceResults = [
                 startingPosition: 15,
                 bestLap: "02:06:076",
             },
-            
+
             {
                 position: 11,
                 driver: "Jack Wixx",
@@ -231,7 +240,7 @@ const gt4RaceResults = [
                 startingPosition: 20,
                 bestLap: "02:05:515",
             },
-            
+
             {
                 position: 13,
                 driver: "Mikey Jones",
@@ -253,7 +262,7 @@ const gt4RaceResults = [
                 startingPosition: 11,
                 bestLap: "02:05:547",
             },
-                                    
+
             {
                 position: 15,
                 driver: "Damien Lopez",
@@ -275,7 +284,7 @@ const gt4RaceResults = [
                 startingPosition: 16,
                 bestLap: "02:09:161",
             },
-            
+
             {
                 position: 17,
                 driver: "Ricardo Luis",
@@ -286,7 +295,7 @@ const gt4RaceResults = [
                 startingPosition: 18,
                 bestLap: "02:09:285",
             },
-        
+
             {
                 position: 18,
                 driver: "Maeve Holiday",
@@ -308,7 +317,7 @@ const gt4RaceResults = [
                 startingPosition: 22,
                 bestLap: "02:07:477",
             },
-                                     
+
             {
                 position: 20,
                 driver: "Penny Martin",
@@ -319,7 +328,7 @@ const gt4RaceResults = [
                 startingPosition: 24,
                 bestLap: "02:12:588",
             },
-            
+
             {
                 position: 21,
                 driver: "April Storm",
@@ -330,7 +339,7 @@ const gt4RaceResults = [
                 startingPosition: 23,
                 bestLap: "02:14:541",
             },
-            
+
             {
                 position: 22,
                 driver: "Michael Peerson",
@@ -341,7 +350,7 @@ const gt4RaceResults = [
                 startingPosition: 19,
                 bestLap: "02:10:817",
             },
-            
+
             {
                 position: 23,
                 driver: "Dorian Riley",
@@ -352,7 +361,7 @@ const gt4RaceResults = [
                 startingPosition: 21,
                 bestLap: "02:09:177",
             },
-            
+
             {
                 position: 24,
                 driver: "Davy Longmire",
@@ -370,7 +379,7 @@ const gt4RaceResults = [
 
     /* =====================================================
        ROUND TWO
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-2",
@@ -391,6 +400,8 @@ const gt4RaceResults = [
 
         description:
             "Official results from Round Two of the Next Orbit Speedfest GT4 Cup.",
+
+        startingPositionBonus: [1],
 
         results: [
 
@@ -415,7 +426,7 @@ const gt4RaceResults = [
                 startingPosition: 1,
                 bestLap: "01:14:703",
             },
-            
+
             {
                 position: 3,
                 driver: "James Barber",
@@ -426,7 +437,7 @@ const gt4RaceResults = [
                 startingPosition: 5,
                 bestLap: "01:15:243",
             },
-            
+
             {
                 position: 4,
                 driver: "Jason Tanners",
@@ -448,7 +459,7 @@ const gt4RaceResults = [
                 startingPosition: 4,
                 bestLap: "01:15:376",
             },
-            
+
             {
                 position: 6,
                 driver: "Jacqueline Bellerose",
@@ -459,8 +470,7 @@ const gt4RaceResults = [
                 startingPosition: 15,
                 bestLap: "01:15:245",
             },
-            
-            
+
             {
                 position: 7,
                 driver: "Esther Hendrix",
@@ -493,7 +503,7 @@ const gt4RaceResults = [
                 startingPosition: 13,
                 bestLap: "01:16:056",
             },
-            
+
             {
                 position: 10,
                 driver: "Jack Wixx",
@@ -504,7 +514,7 @@ const gt4RaceResults = [
                 startingPosition: 16,
                 bestLap: "01:16:437",
             },
-            
+
             {
                 position: 11,
                 driver: "Davy Longmire",
@@ -526,7 +536,7 @@ const gt4RaceResults = [
                 startingPosition: 8,
                 bestLap: "01:16:364",
             },
-            
+
             {
                 position: 13,
                 driver: "Samuel Copeland",
@@ -548,7 +558,7 @@ const gt4RaceResults = [
                 startingPosition: 14,
                 bestLap: "01:16:273",
             },
-                                    
+
             {
                 position: 15,
                 driver: "Elliot Greene",
@@ -570,7 +580,7 @@ const gt4RaceResults = [
                 startingPosition: 10,
                 bestLap: "01:16:393",
             },
-            
+
             {
                 position: 17,
                 driver: "Maeve Holiday",
@@ -581,7 +591,7 @@ const gt4RaceResults = [
                 startingPosition: 19,
                 bestLap: "01:16:522",
             },
-        
+
             {
                 position: 18,
                 driver: "Ricardo Luis",
@@ -603,7 +613,7 @@ const gt4RaceResults = [
                 startingPosition: 12,
                 bestLap: "01:17:120",
             },
-                                     
+
             {
                 position: 20,
                 driver: "Lorenzo Jackson",
@@ -614,7 +624,7 @@ const gt4RaceResults = [
                 startingPosition: 21,
                 bestLap: "01:17:157",
             },
-            
+
             {
                 position: 21,
                 driver: "April Storm",
@@ -625,7 +635,7 @@ const gt4RaceResults = [
                 startingPosition: 23,
                 bestLap: "01:19:773",
             },
-            
+
             {
                 position: 22,
                 driver: "Rae Davis",
@@ -636,7 +646,7 @@ const gt4RaceResults = [
                 startingPosition: 22,
                 bestLap: "01:18:966",
             },
-            
+
             {
                 position: 23,
                 driver: "Billie Doherty",
@@ -647,7 +657,7 @@ const gt4RaceResults = [
                 startingPosition: 24,
                 bestLap: "01:19:602",
             },
-            
+
             {
                 position: 24,
                 driver: "Damien Lopez",
@@ -676,7 +686,7 @@ const gt4RaceResults = [
 
     /* =====================================================
        ROUND THREE
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-3",
@@ -689,22 +699,268 @@ const gt4RaceResults = [
 
         date: "27 September 2026",
 
-        status: "Upcoming",
+        status: "Complete",
 
-        published: false,
+        published: true,
 
         page: "races/round-3.html",
 
         description:
             "Round Three of the Next Orbit Speedfest GT4 Cup.",
 
-        results: []
+        startingPositionBonus: [1],
+
+        results: [
+
+            {
+                position: 1,
+                driver: "Ray Larson",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: true,
+
+                startingPosition: 2,
+                bestLap: "01:12:674",
+            },
+
+            {
+                position: 2,
+                driver: "Geoffrey Davenport",
+                team: "Pit Stop",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 11,
+                bestLap: "01:14:220",
+            },
+
+            {
+                position: 3,
+                driver: "Levi Grayson",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 2,
+                bestLap: "01:13:870",
+            },
+
+            {
+                position: 4,
+                driver: "Wylie Whitlow",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 9,
+                bestLap: "01:15:342",
+            },
+
+            {
+                position: 5,
+                driver: "Esther Hendrix",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 7,
+                bestLap: "01:14:258",
+            },
+
+            {
+                position: 6,
+                driver: "Chris Romano",
+                team: "Striking Photograhy",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 10,
+                bestLap: "01:14:215",
+            },
+
+            {
+                position: 7,
+                driver: "Daniel Rogers",
+                team: "PDMosleys Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 13,
+                bestLap: "01:14:518",
+            },
+
+            {
+                position: 8,
+                driver: "Elliot Greene",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 20,
+                bestLap: "01:15:734",
+            },
+
+            {
+                position: 9,
+                driver: "Charlie Marlow",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 1,
+                bestLap: "01:12:409",
+            },
+
+            {
+                position: 10,
+                driver: "Adin Sahic",
+                team: "PDMosleys Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 18,
+                bestLap: "01:15:896",
+            },
+
+            {
+                position: 11,
+                driver: "Damien Lopez",
+                team: "OC Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 19,
+                bestLap: "01:15:895",
+            },
+
+            {
+                position: 12,
+                driver: "Samuel Copeland",
+                team: "OC Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 6,
+                bestLap: "01:14:835",
+            },
+
+            {
+                position: 13,
+                driver: "Jason Tanners",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 5,
+                bestLap: "01:12:996",
+            },
+
+            {
+                position: 14,
+                driver: "Rae Davis",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 15,
+                bestLap: "01:16:324",
+            },
+
+            {
+                position: 15,
+                driver: "Maeve Holiday",
+                team: "Boba Babes",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 8,
+                bestLap: "01:14:459",
+            },
+
+            {
+                position: 16,
+                driver: "Ricardo Luis",
+                team: "The Asylum",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 16,
+                bestLap: "01:15:568",
+            },
+
+            {
+                position: 17,
+                driver: "Jack Wixx",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 12,
+                bestLap: "01:14:419",
+            },
+
+            {
+                position: 18,
+                driver: "Jessica Valentino",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 14,
+                bestLap: "01:14:154",
+            },
+
+            {
+                position: 19,
+                driver: "Connor McGinty",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 22,
+                bestLap: "01:17:351",
+            },
+
+            {
+                position: 20,
+                driver: "Billie Doherty",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 21,
+                bestLap: "01:19:207",
+            },
+
+            {
+                position: 21,
+                driver: "Davy Longmire",
+                team: "Team NOS",
+                status: "DNF",
+                fastestLap: false,
+
+                startingPosition: 17,
+                bestLap: "01:15:458",
+            },
+
+            {
+                position: 22,
+                driver: "James Barber",
+                team: "PDM Racing",
+                status: "DSQ",
+                fastestLap: false,
+
+                startingPosition: 4,
+                bestLap: "01:13:105",
+            },
+
+        ]
     },
 
 
     /* =====================================================
        ROUND FOUR
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-4",
@@ -726,13 +982,15 @@ const gt4RaceResults = [
         description:
             "Round Four of the Next Orbit Speedfest GT4 Cup.",
 
+        startingPositionBonus: [1],
+
         results: []
     },
 
 
     /* =====================================================
        ROUND FIVE
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-5",
@@ -754,13 +1012,15 @@ const gt4RaceResults = [
         description:
             "Round Five of the Next Orbit Speedfest GT4 Cup.",
 
+        startingPositionBonus: [1],
+
         results: []
     },
 
 
     /* =====================================================
        ROUND SIX
-    ===================================================== */
+       ===================================================== */
 
     {
         id: "round-6",
@@ -781,6 +1041,8 @@ const gt4RaceResults = [
 
         description:
             "The final round of the Next Orbit Speedfest GT4 Cup.",
+
+        startingPositionBonus: [1],
 
         results: []
     }
