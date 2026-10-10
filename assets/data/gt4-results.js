@@ -1000,7 +1000,7 @@ const gt4RaceResults = [
             {
                 position: 2,
                 driver: "Charlie Marlow",
-                team: "Pit Stop",
+                team: "Wicked Motors",
                 status: "Finished",
                 fastestLap: true,
 
