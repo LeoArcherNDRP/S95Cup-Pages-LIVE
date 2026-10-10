@@ -1164,7 +1164,7 @@ const gt4RaceResults = [
 
             {
                 position: 17,
-                driver: "Rciardo Luis",
+                driver: "Ricardo Luis",
                 team: "The Asylum",
                 status: "Finished",
                 fastestLap: false,
