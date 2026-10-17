@@ -1236,19 +1236,176 @@ const gt4RaceResults = [
 
         date: "11 October 2026",
 
-        status: "Upcoming",
+        status: "Complete",
 
-        published: false,
+        published: true,
 
         page: "races/round-5.html",
 
         description:
-            "Round Five of the Next Orbit Speedfest GT4 Cup.",
+            "Official results from Round Five of the Next Orbit Speedfest GT4 Cup.",
 
         startingPositionBonus: [1],
 
-        results: []
+        results: [
+
+            {
+                position: 1,
+                driver: "Ray Larson",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 2,
+                bestLap: "01:09:878",
+            },
+
+            {
+                position: 2,
+                driver: "Charlie Marlow",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: true,
+
+                startingPosition: 1,
+                bestLap: "01:10:005",
+            },
+
+            {
+                position: 3,
+                driver: "Levi Grayson",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 4,
+                bestLap: "01:10:025",
+            },
+
+            {
+                position: 4,
+                driver: "Wylie Whitlow",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 3,
+                bestLap: "01:10:570",
+            },
+
+            {
+                position: 5,
+                driver: "James Barber",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 5,
+                bestLap: "01:11:018",
+            },
+
+            {
+                position: 6,
+                driver: "Jason Tanners",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 6,
+                bestLap: "01:10:671",
+            },
+
+            {
+                position: 7,
+                driver: "Geoffrey Davenport",
+                team: "Pit Stop",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 8,
+                bestLap: "01:11:195",
+            },
+
+            {
+                position: 8,
+                driver: "Esther Hendrix",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 7,
+                bestLap: "01:11:464",
+            },
+
+            {
+                position: 9,
+                driver: "Jack Wixx",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 9,
+                bestLap: "01:11:609",
+            },
+
+            {
+                position: 10,
+                driver: "Daniel Rogers",
+                team: "PDMosleys Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 10,
+                bestLap: "01:12:297",
+            },
+
+            {
+                position: 11,
+                driver: "Maeve Holiday",
+                team: "Boba Babes",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 11,
+                bestLap: "01:11:718",
+            },
+
+            {
+                position: 12,
+                driver: "Davy Longmire",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 12,
+                bestLap: "01:12:495",
+            },
+
+            {
+                position: 13,
+                driver: "Rae Davis",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 13,
+                bestLap: "01:12:995",
+            },
+
+            {
+                position: 14,
+                driver: "Conor McGinty",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 14,
+                bestLap: "01:15:053",
+            },
+
+        ]
     },
+
 
 
     /* =====================================================
