@@ -342,7 +342,7 @@ const gt4RaceResults = [
 
             {
                 position: 22,
-                driver: "Michael Peerson",
+                driver: "Billie Doherty",
                 team: "Wildcards",
                 status: "DNF",
                 fastestLap: false,
@@ -353,7 +353,7 @@ const gt4RaceResults = [
 
             {
                 position: 23,
-                driver: "Dorian Riley",
+                driver: "Lorenzo Jackson",
                 team: "Sip Happens",
                 status: "DNF",
                 fastestLap: false,
@@ -495,7 +495,7 @@ const gt4RaceResults = [
 
             {
                 position: 9,
-                driver: "Jessica Valentino",
+                driver: "Penny Martin",
                 team: "PDM Racing",
                 status: "Finished",
                 fastestLap: false,
@@ -770,7 +770,7 @@ const gt4RaceResults = [
             {
                 position: 6,
                 driver: "Chris Romano",
-                team: "Striking Photograhy",
+                team: "Striking Photography",
                 status: "Finished",
                 fastestLap: false,
 
@@ -813,7 +813,7 @@ const gt4RaceResults = [
 
             {
                 position: 10,
-                driver: "Adin Sahic",
+                driver: "Mikey Jones",
                 team: "PDMosleys Racing",
                 status: "Finished",
                 fastestLap: false,
@@ -901,7 +901,7 @@ const gt4RaceResults = [
 
             {
                 position: 18,
-                driver: "Jessica Valentino",
+                driver: "Penny Martin",
                 team: "PDM Racing",
                 status: "Finished",
                 fastestLap: false,
@@ -912,7 +912,7 @@ const gt4RaceResults = [
 
             {
                 position: 19,
-                driver: "Connor McGinty",
+                driver: "Elliot Greene",
                 team: "Sip Happens",
                 status: "Finished",
                 fastestLap: false,
@@ -1208,7 +1208,7 @@ const gt4RaceResults = [
 
             {
                 position: 21,
-                driver: "Adin Sahic",
+                driver: "Mikey Jones",
                 team: "PDMosleys Racing",
                 status: "DNF",
                 fastestLap: false,
@@ -1394,7 +1394,7 @@ const gt4RaceResults = [
 
             {
                 position: 14,
-                driver: "Conor McGinty",
+                driver: "Lorenzo Jackson",
                 team: "Sip Happens",
                 status: "Finished",
                 fastestLap: false,
@@ -1423,9 +1423,9 @@ const gt4RaceResults = [
 
         date: "18 October 2026",
 
-        status: "Upcoming",
+        status: "Complete",
 
-        published: false,
+        published: true,
 
         page: "races/round-6.html",
 
@@ -1434,7 +1434,207 @@ const gt4RaceResults = [
 
         startingPositionBonus: [1],
 
-        results: []
-    }
+        results: [
+
+            {
+                position: 1,
+                driver: "Ray Larson",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 3,
+                bestLap: "02:20:535",
+            },
+
+            {
+                position: 2,
+                driver: "Charlie Marlow",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 2,
+                bestLap: "02:20:533",
+            },
+
+            {
+                position: 3,
+                driver: "Levi Grayson",
+                team: "Grayson Motorsports x Meadow House",
+                status: "Finished",
+                fastestLap: true,
+
+                startingPosition: 1,
+                bestLap: "02:20:385",
+            },
+
+            {
+                position: 4,
+                driver: "Jason Tanners",
+                team: "Wicked Motors",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 4,
+                bestLap: "02:21:745",
+            },
+
+            {
+                position: 5,
+                driver: "Wylie Whitlow",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 10,
+                bestLap: "02:23:680",
+            },
+
+            {
+                position: 6,
+                driver: "James Barber",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 6,
+                bestLap: "02:22:647",
+            },
+
+            {
+                position: 7,
+                driver: "Geoffrey Davenport",
+                team: "Pit Stop",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 7,
+                bestLap: "02:23:488",
+            },
+
+            {
+                position: 8,
+                driver: "Esther Hendrix",
+                team: "ASCEND",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 9,
+                bestLap: "02:24:516",
+            },
+
+            {
+                position: 9,
+                driver: "Samuel Copeland",
+                team: "OC Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 11,
+                bestLap: "02:25:735",
+            },
+
+            {
+                position: 10,
+                driver: "Penny Martin",
+                team: "PDM Racing",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 8,
+                bestLap: "02:23:038",
+            },
+
+            {
+                position: 11,
+                driver: "Damien Lopez",
+                team: "OC Motorsports",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 16,
+                bestLap: "02:25:741",
+            },
+
+            {
+                position: 12,
+                driver: "Elliot Greene",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 12,
+                bestLap: "02:25:178",
+            },
+
+            {
+                position: 13,
+                driver: "Shaun Barnes",
+                team: "BBC",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 14,
+                bestLap: "02:26:760",
+            },
+
+            {
+                position: 14,
+                driver: "Lorenzo Jackson",
+                team: "Sip Happens",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 17,
+                bestLap: "02:26:205",
+            },
+
+            {
+                position: 15,
+                driver: "Ricardo Luis",
+                team: "The Asylum",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 13,
+                bestLap: "02:26:695",
+            },
+
+            {
+                position: 16,
+                driver: "Rae Davis",
+                team: "Wildcards",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 18,
+                bestLap: "02:27:988",
+            },
+
+            {
+                position: 17,
+                driver: "Davy Longmire",
+                team: "Team NOS",
+                status: "Finished",
+                fastestLap: false,
+
+                startingPosition: 15,
+                bestLap: "02:27:161",
+            },
+
+            {
+                position: 18,
+                driver: "Jacqueline Bellerose",
+                team: "Pixiedust Motorsports",
+                status: "DNF",
+                fastestLap: false,
+
+                startingPosition: 5,
+                bestLap: "02:26:352",
+            },
+
+        ]
+    },
 
 ];
